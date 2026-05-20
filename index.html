@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BestIPTVToday – 25,000+ Channels in HD & 4K</title>
+  <meta name="description" content="Best IPTV Subscription service with 25,000+ live channels, 60,000+ movies and series in HD and 4K quality. No buffering guaranteed. Instant activation.">
+  <meta name="keywords" content="IPTV subscription, HD channels, 4K streaming, live TV, sports channels, IPTV service, best IPTV">
+  <meta property="og:title" content="BestIPTVToday – 25,000+ Channels in HD & 4K">
+  <meta property="og:description" content="Watch sports, movies, and international channels with zero buffering">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #05050d;
+      --bg2: #080814;
+      --card: rgba(255,255,255,0.03);
+      --cyan: #00d4ff;
+      --purple: #7b2fff;
+      --pink: #ff2dce;
+      --text: #ffffff;
+      --muted: #8888aa;
+      --border: rgba(255,255,255,0.08);
+      --grad: linear-gradient(135deg,#7b2fff,#00d4ff);
+      --grad-card: linear-gradient(135deg,rgba(123,47,255,0.12),rgba(0,212,255,0.06));
+      --r: 16px;
+      --t: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+    ::-webkit-scrollbar{width:5px}
+    ::-webkit-scrollbar-track{background:var(--bg)}
+    ::-webkit-scrollbar-thumb{background:var(--purple);border-radius:3px}
+
+    /* ─── UTILS ─── */
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .section{padding:100px 0}
+    .label{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+    .label::before{content:'';width:18px;height:2px;background:var(--cyan);border-radius:2px}
+    h2.title{font-size:clamp(30px,5vw,52px);font-weight:900;line-height:1.08;letter-spacing:-1px;margin-bottom:18px}
+    .sub{font-size:17px;color:var(--muted);max-width:580px;line-height:1.75}
+    .grad{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 30px;border-radius:50px;font-size:15px;font-weight:700;cursor:pointer;border:none;transition:var(--t);text-decoration:none;white-space:nowrap}
+    .btn-p{background:var(--grad);color:#fff;box-shadow:0 0 30px rgba(123,47,255,0.45)}
+    .btn-p:hover{transform:translateY(-3px);box-shadow:0 0 50px rgba(0,212,255,0.55)}
+    .btn-o{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.25)}
+    .btn-o:hover{border-color:var(--cyan);background:rgba(0,212,255,0.08);transform:translateY(-3px)}
+
+    /* ─── NAVBAR ─── */
+    nav{position:fixed;top:0;width:100%;z-index:1000;padding:20px 0;transition:var(--t)}
+    nav.scrolled{background:rgba(5,5,13,0.96);backdrop-filter:blur(20px);padding:13px 0;border-bottom:1px solid var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:19px;font-weight:900;text-decoration:none;color:#fff;display:flex;align-items:center;gap:12px;letter-spacing:-0.4px}
+    .logo-icon{width:44px;height:44px;background:var(--grad);border-radius:13px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(102,126,234,0.5),0 0 0 1px rgba(255,255,255,0.08);flex-shrink:0;transition:var(--t)}
+    .logo:hover .logo-icon{box-shadow:0 6px 28px rgba(102,126,234,0.7),0 0 0 1px rgba(255,255,255,0.12);transform:scale(1.06)}
+    .logo-text{display:flex;flex-direction:column;line-height:1}
+    .logo-main{font-size:17px;font-weight:900;letter-spacing:-0.3px;color:#fff}
+    .logo-sub{font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cyan);text-transform:uppercase;margin-top:2px;opacity:0.9}
+    .logo span{color:var(--cyan)}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:var(--t)}
+    .nav-links a:hover{color:#fff}
+    .nav-actions{display:flex;align-items:center;gap:10px}
+    .btn-login{padding:9px 18px;border-radius:8px;background:rgba(0,230,180,0.08);color:#00e6b4;text-decoration:none;font-size:13px;font-weight:700;border:1px solid rgba(0,230,180,0.35);transition:var(--t);letter-spacing:0.02em}
+    .btn-login:hover{background:rgba(0,230,180,0.16);border-color:#00e6b4;box-shadow:0 0 12px rgba(0,230,180,0.25);transform:translateY(-1px)}
+    .btn-cta{padding:9px 20px;border-radius:8px;background:var(--grad);color:#fff;text-decoration:none;font-size:13px;font-weight:700;transition:var(--t)}
+    .btn-cta:hover{opacity:0.88;transform:translateY(-1px)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+    .hamburger span{display:block;width:23px;height:2px;background:#fff;border-radius:2px;transition:var(--t)}
+
+    /* ─── MOBILE MENU ─── */
+    .mmenu{display:none;position:fixed;inset:0;background:rgba(5,5,13,0.98);z-index:1100;flex-direction:column;align-items:center;justify-content:center;gap:36px;backdrop-filter:blur(24px)}
+    .mmenu.open{display:flex}
+    .mmenu ul{list-style:none;text-align:center;display:flex;flex-direction:column;gap:28px}
+    .mmenu ul a{color:#fff;text-decoration:none;font-size:26px;font-weight:800;transition:var(--t)}
+    .mmenu ul a:hover{color:var(--cyan)}
+    .mmenu-close{position:absolute;top:22px;right:24px;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+    /* ─── HERO ─── */
+    #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% -5%,rgba(123,47,255,0.38) 0%,transparent 60%),radial-gradient(ellipse 55% 40% at 85% 55%,rgba(0,212,255,0.18) 0%,transparent 50%),radial-gradient(ellipse 40% 35% at 15% 75%,rgba(255,45,206,0.13) 0%,transparent 50%)}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 0%,transparent 72%)}
+    .hero-content{position:relative;z-index:1;text-align:center;max-width:900px;margin:0 auto}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,0.09);border:1px solid rgba(0,212,255,0.3);border-radius:50px;padding:8px 20px;font-size:12px;font-weight:700;color:var(--cyan);margin-bottom:30px;animation:pulse-b 2.5s infinite}
+    @keyframes pulse-b{0%,100%{box-shadow:0 0 0 0 rgba(0,212,255,0.25)}50%{box-shadow:0 0 0 9px rgba(0,212,255,0)}}
+    .dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;animation:blink 1.6s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0.25}}
+    h1.hero-title{font-size:clamp(36px,6.5vw,74px);font-weight:900;line-height:1.04;letter-spacing:-2px;margin-bottom:22px}
+    .hero-sub{font-size:clamp(15px,2.2vw,20px);color:var(--muted);line-height:1.75;margin-bottom:44px;max-width:620px;margin-left:auto;margin-right:auto}
+    .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}
+    .hero-stats{display:flex;justify-content:center;align-items:center;gap:0;flex-wrap:wrap}
+    .hstat{text-align:center;padding:0 36px}
+    .hstat-n{font-size:30px;font-weight:900;line-height:1;margin-bottom:5px}
+    .hstat-l{font-size:12px;color:var(--muted);font-weight:500}
+    .hstat-div{width:1px;height:40px;background:var(--border)}
+    .fcard{position:absolute;background:rgba(255,255,255,0.05);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;animation:float 6s ease-in-out infinite}
+    .fcard.c1{left:4%;top:26%;animation-delay:0s}
+    .fcard.c2{right:4%;top:32%;animation-delay:2s}
+    .fcard.c3{left:6%;bottom:18%;animation-delay:4s}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    .fcard-ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar{background:rgba(0,212,255,0.04);border-top:1px solid rgba(0,212,255,0.09);border-bottom:1px solid rgba(0,212,255,0.09);padding:18px 0}
+    .trust-inner{display:flex;align-items:center;justify-content:center;gap:44px;flex-wrap:wrap}
+    .trust-item{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--muted)}
+    .trust-item i{color:var(--cyan);font-size:15px}
+
+    /* ─── FEATURES ─── */
+    #features{background:var(--bg2)}
+    .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+    .feat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:34px 26px;transition:var(--t);position:relative;overflow:hidden}
+    .feat-card::before{content:'';position:absolute;inset:0;background:var(--grad-card);opacity:0;transition:var(--t)}
+    .feat-card:hover{border-color:rgba(0,212,255,0.28);transform:translateY(-7px);box-shadow:0 18px 55px rgba(0,212,255,0.09)}
+    .feat-card:hover::before{opacity:1}
+    .feat-ico{width:56px;height:56px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:22px;position:relative}
+    .feat-title{font-size:17px;font-weight:700;margin-bottom:9px}
+    .feat-desc{font-size:14px;color:var(--muted);line-height:1.65}
+
+    /* ─── PRICING ─── */
+    #pricing{background:var(--bg)}
+    .price-hd{text-align:center;margin-bottom:56px}
+    .price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:start}
+    .price-card{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:22px;padding:32px 24px;transition:var(--t);position:relative;overflow:hidden}
+    .price-card:hover{transform:translateY(-7px);border-color:rgba(0,212,255,0.28)}
+    .price-card.feat{background:linear-gradient(155deg,rgba(123,47,255,0.18),rgba(0,212,255,0.09));border:2px solid var(--cyan);box-shadow:0 0 55px rgba(0,212,255,0.13);transform:scale(1.04)}
+    .price-card.feat:hover{transform:scale(1.04) translateY(-7px)}
+    .best-badge{position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:5px 18px;border-radius:0 0 10px 10px}
+    .price-dur{font-size:12px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;margin-top:18px}
+    .price-row{display:flex;align-items:baseline;gap:3px;margin-bottom:6px}
+    .p-cur{font-size:22px;font-weight:700;color:var(--muted)}
+    .p-amt{font-size:52px;font-weight:900;line-height:1}
+    .p-per{font-size:13px;color:var(--muted);padding-bottom:6px;align-self:flex-end}
+    .p-orig{font-size:13px;color:var(--muted);text-decoration:line-through;margin-bottom:22px}
+    .p-div{height:1px;background:var(--border);margin-bottom:22px}
+    .p-feats{list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:11px}
+    .p-feats li{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
+    .p-feats li .ck{color:var(--cyan);font-size:13px;flex-shrink:0}
+    .sbadge{display:inline-block;background:rgba(0,212,255,0.13);color:var(--cyan);border:1px solid rgba(0,212,255,0.28);padding:2px 9px;border-radius:50px;font-size:10px;font-weight:800;margin-left:6px}
+    .pbtn{display:block;text-align:center;padding:13px;border-radius:11px;font-size:14px;font-weight:700;text-decoration:none;transition:var(--t);cursor:pointer;border:none;width:100%}
+    .pbtn-o{background:transparent;border:2px solid rgba(255,255,255,0.18);color:#fff}
+    .pbtn-o:hover{border-color:var(--cyan);background:rgba(0,212,255,0.09)}
+    .pbtn-f{background:var(--grad);color:#fff;box-shadow:0 0 28px rgba(123,47,255,0.38)}
+    .pbtn-f:hover{box-shadow:0 0 45px rgba(0,212,255,0.48);transform:translateY(-2px)}
+
+    /* ─── DEVICES ─── */
+    #devices{background:var(--bg2)}
+    .dev-hd{text-align:center;margin-bottom:56px}
+    .dev-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+    .dev-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:26px 14px;text-align:center;transition:var(--t);cursor:default}
+    .dev-card:hover{border-color:rgba(123,47,255,0.45);transform:translateY(-8px);background:rgba(123,47,255,0.09);box-shadow:0 10px 38px rgba(123,47,255,0.18)}
+    .dev-ico{font-size:34px;margin-bottom:13px;display:block}
+    .dev-name{font-size:12px;font-weight:600;color:var(--muted)}
+
+    /* ─── HOW IT WORKS ─── */
+    #how{background:var(--bg)}
+    .how-hd{text-align:center;margin-bottom:72px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;position:relative}
+    .steps::before{content:'';position:absolute;top:48px;left:22%;right:22%;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan));opacity:0.25}
+    .step{text-align:center;padding:36px 24px;background:var(--card);border:1px solid var(--border);border-radius:var(--r);transition:var(--t)}
+    .step:hover{border-color:rgba(0,212,255,0.28);transform:translateY(-7px)}
+    .step-num{width:76px;height:76px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:900;margin:0 auto 22px;box-shadow:0 0 28px rgba(123,47,255,0.45)}
+    .step-title{font-size:19px;font-weight:700;margin-bottom:10px}
+    .step-desc{font-size:14px;color:var(--muted);line-height:1.65}
+
+    /* ─── TESTIMONIALS ─── */
+    #testimonials{background:var(--bg2)}
+    .testi-hd{text-align:center;margin-bottom:56px}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .tcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;transition:var(--t)}
+    .tcard:hover{border-color:rgba(0,212,255,0.18);transform:translateY(-4px)}
+    .stars{color:#ffd700;font-size:13px;letter-spacing:2px;margin-bottom:14px}
+    .ttext{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:22px;font-style:italic}
+    .tauthor{display:flex;align-items:center;gap:11px}
+    .avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;flex-shrink:0}
+    .aname{font-weight:700;font-size:14px}
+    .aloc{font-size:11px;color:var(--muted);margin-top:1px}
+    .verified{display:inline-flex;align-items:center;gap:3px;font-size:10px;color:var(--cyan);font-weight:700;margin-top:3px}
+
+    /* ─── FAQ ─── */
+    #faq{background:var(--bg)}
+    .faq-hd{text-align:center;margin-bottom:56px}
+    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:var(--t)}
+    .faq-item.open{border-color:rgba(0,212,255,0.28)}
+    .faq-q{display:flex;align-items:center;justify-content:space-between;padding:22px 26px;cursor:pointer;font-size:15px;font-weight:600;gap:14px}
+    .faq-ico{width:26px;height:26px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;transition:var(--t);color:var(--muted)}
+    .faq-item.open .faq-ico{background:var(--grad);border-color:transparent;color:#fff;transform:rotate(45deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+    .faq-item.open .faq-a{max-height:260px}
+    .faq-a-inner{padding:0 26px 22px;font-size:14px;color:var(--muted);line-height:1.75}
+
+    /* ─── FOOTER ─── */
+    footer{background:#030309;border-top:1px solid var(--border);padding:76px 0 36px}
+    .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:56px}
+    .foot-desc{font-size:13px;color:var(--muted);line-height:1.75;margin:14px 0 22px}
+    .socials{display:flex;gap:10px}
+    .soc{width:38px;height:38px;border-radius:9px;background:rgba(255,255,255,0.05);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--muted);font-size:14px;transition:var(--t)}
+    .soc:hover{background:rgba(0,212,255,0.12);border-color:var(--cyan);color:var(--cyan)}
+    .foot-title{font-size:15px;font-weight:700;margin-bottom:18px}
+    .foot-links{list-style:none;display:flex;flex-direction:column;gap:11px}
+    .foot-links a{color:var(--muted);text-decoration:none;font-size:13px;transition:var(--t)}
+    .foot-links a:hover{color:var(--cyan)}
+    .contact-a{display:flex;align-items:center;gap:11px;color:var(--muted);font-size:13px;margin-bottom:12px;text-decoration:none;transition:var(--t)}
+    .contact-a:hover{color:var(--cyan)}
+    .cico{width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+    .foot-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);flex-wrap:wrap;gap:14px}
+    .foot-links2{display:flex;gap:22px}
+    .foot-links2 a{color:var(--muted);text-decoration:none;font-size:12px;transition:var(--t)}
+    .foot-links2 a:hover{color:var(--cyan)}
+
+    /* ─── WHATSAPP ─── */
+    .wa-float{position:fixed;bottom:30px;right:30px;z-index:998;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .wa-btn{width:58px;height:58px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,0.45);transition:var(--t);animation:wa-pulse 3s infinite}
+    .wa-btn:hover{transform:scale(1.1)}
+    @keyframes wa-pulse{0%,100%{box-shadow:0 4px 18px rgba(37,211,102,0.45)}50%{box-shadow:0 4px 35px rgba(37,211,102,0.75),0 0 0 10px rgba(37,211,102,0.08)}}
+    .wa-tip{background:rgba(5,5,13,0.96);border:1px solid rgba(37,211,102,0.3);color:#fff;padding:9px 15px;border-radius:9px;font-size:12px;font-weight:700;white-space:nowrap;transition:opacity 0.5s ease}
+
+    /* ─── SCROLL TOP ─── */
+    .scroll-top{position:fixed;bottom:100px;right:30px;z-index:998;width:42px;height:42px;background:rgba(255,255,255,0.07);border:1px solid var(--border);border-radius:11px;display:flex;align-items:center;justify-content:center;color:#fff;cursor:pointer;transition:var(--t);opacity:0;pointer-events:none;backdrop-filter:blur(10px)}
+    .scroll-top.vis{opacity:1;pointer-events:auto}
+    .scroll-top:hover{background:rgba(0,212,255,0.18);border-color:var(--cyan)}
+
+    /* ─── ANIMATIONS ─── */
+    .fi{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease}
+    .fi.vis{opacity:1;transform:translateY(0)}
+    .fi.d1{transition-delay:0.1s}.fi.d2{transition-delay:0.2s}.fi.d3{transition-delay:0.3s}.fi.d4{transition-delay:0.4s}.fi.d5{transition-delay:0.5s}
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width:1100px){
+      .price-grid{grid-template-columns:repeat(2,1fr)}
+      .price-card.feat{transform:none}
+      .price-card.feat:hover{transform:translateY(-7px)}
+      .dev-grid{grid-template-columns:repeat(3,1fr)}
+    }
+    @media(max-width:900px){
+      .feat-grid{grid-template-columns:repeat(2,1fr)}
+      .foot-grid{grid-template-columns:1fr 1fr}
+      .testi-grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+      .steps::before{display:none}
+      .faq-grid{grid-template-columns:1fr}
+      .fcard{display:none}
+    }
+    @media(max-width:768px){
+      .nav-links,.nav-actions{display:none}
+      .hamburger{display:flex}
+      .price-grid{grid-template-columns:1fr}
+      .feat-grid{grid-template-columns:1fr}
+      .foot-grid{grid-template-columns:1fr}
+      .section{padding:70px 0}
+      .trust-inner{gap:22px}
+      .hstat{padding:0 20px}
+      .hstat-div{display:none}
+    }
+    @media(max-width:480px){
+      .dev-grid{grid-template-columns:repeat(2,1fr)}
+      .wa-float{bottom:18px;right:18px}
+      .scroll-top{right:18px;bottom:88px}
+    }
+
+    /* ─── WHATSAPP PROOF SECTION ─── */
+    #wa-proof{background:var(--bg2)}
+    .wa-proof-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .wa-proof-text .label{margin-bottom:14px}
+    .wa-proof-text .title{margin-bottom:18px}
+    .wa-proof-text .sub{margin-bottom:32px}
+    .wa-proof-bullets{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:36px}
+    .wa-proof-bullets li{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)}
+    .wa-proof-bullets li i{color:#25d366;font-size:16px;flex-shrink:0}
+    .wa-proof-cta{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#fff;padding:14px 28px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none;transition:var(--t);box-shadow:0 0 28px rgba(37,211,102,0.35)}
+    .wa-proof-cta:hover{background:#20bc5a;transform:translateY(-3px);box-shadow:0 0 45px rgba(37,211,102,0.55)}
+
+    /* Phone frame */
+    .wa-phone-wrap{display:flex;justify-content:center}
+    .wa-phone{width:320px;background:#111b21;border-radius:28px;overflow:hidden;box-shadow:0 28px 80px rgba(0,0,0,0.6),0 0 0 1px rgba(255,255,255,0.07);border:2px solid rgba(255,255,255,0.06)}
+    .wa-phone-top{background:#1f2c34;padding:10px 16px;display:flex;align-items:center;gap:10px}
+    .wa-phone-back{color:#aebac1;font-size:18px}
+    .wa-phone-avatar{width:38px;height:38px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+    .wa-phone-info{flex:1}
+    .wa-phone-name{font-size:14px;font-weight:700;color:#e9edef;line-height:1.2}
+    .wa-phone-status{font-size:11px;color:#8696a0}
+    .wa-phone-icons{display:flex;gap:14px;color:#aebac1;font-size:16px}
+    .wa-chat-area{background:#0b141a;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");padding:14px 12px;display:flex;flex-direction:column;gap:6px;min-height:430px;max-height:430px;overflow-y:auto}
+    .wa-date-div{text-align:center;margin:6px 0}
+    .wa-date-div span{background:rgba(255,255,255,0.08);color:#8696a0;font-size:11px;padding:4px 12px;border-radius:8px}
+    .wa-msg{display:flex;flex-direction:column;max-width:78%}
+    .wa-msg.out{align-self:flex-end;align-items:flex-end}
+    .wa-msg.in{align-self:flex-start;align-items:flex-start}
+    .wa-bubble{padding:8px 12px 6px;border-radius:8px;font-size:13px;line-height:1.5;position:relative}
+    .wa-msg.in .wa-bubble{background:#202c33;color:#e9edef;border-top-left-radius:2px}
+    .wa-msg.out .wa-bubble{background:#005c4b;color:#e9edef;border-top-right-radius:2px}
+    .wa-meta{display:flex;align-items:center;gap:4px;font-size:10px;color:#8696a0;margin-top:2px;justify-content:flex-end}
+    .wa-ticks{color:#53bdeb}
+
+    @media(max-width:900px){
+      .wa-proof-inner{grid-template-columns:1fr;text-align:center}
+      .wa-proof-bullets{align-items:center}
+      .wa-phone-wrap{margin-top:20px}
+    }
+    @media(max-width:480px){
+      .wa-phone{width:290px}
+    }
+
+    /* ─── SCREENSHOT GALLERY ─── */
+    #screenshots{background:var(--bg)}
+    .ss-hd{text-align:center;margin-bottom:56px}
+    .ss-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .ss-card{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.55),0 0 0 1px rgba(255,255,255,0.06);transition:var(--t)}
+    .ss-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 32px 80px rgba(0,0,0,0.7),0 0 0 1px rgba(0,212,255,0.18)}
+    /* WhatsApp light theme inside each card */
+    .ss-status-bar{background:#075e54;padding:6px 14px;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:rgba(255,255,255,0.85)}
+    .ss-status-icons{display:flex;gap:6px;align-items:center;font-size:10px}
+    .ss-wa-header{background:#075e54;padding:10px 14px;display:flex;align-items:center;gap:10px}
+    .ss-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;border:2px solid rgba(255,255,255,0.3)}
+    .ss-contact{flex:1}
+    .ss-contact-name{font-size:13px;font-weight:700;color:#fff}
+    .ss-contact-status{font-size:10px;color:rgba(255,255,255,0.72)}
+    .ss-wa-icons{display:flex;gap:14px;color:rgba(255,255,255,0.8);font-size:14px}
+    .ss-chat{background:#e5ddd5;padding:12px 10px;display:flex;flex-direction:column;gap:5px;background-image:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.04'%3E%3Cpath d='M20 20.5V18H0v5h5v5H0v5h20v-5H15v-5h5zM0 5V0h20v5H0zm0 10V10h20v5H0zm15 20v-5H0v5H15z'/%3E%3C/g%3E%3C/svg%3E")}
+    .ss-msg{display:flex;flex-direction:column}
+    .ss-msg.out{align-items:flex-end}
+    .ss-msg.in{align-items:flex-start}
+    .ss-bub{padding:7px 10px 5px;border-radius:8px;font-size:11.5px;line-height:1.5;color:#303030;max-width:82%;position:relative;word-break:break-word}
+    .ss-msg.in .ss-bub{background:#fff;border-top-left-radius:2px}
+    .ss-msg.out .ss-bub{background:#dcf8c6;border-top-right-radius:2px}
+    .ss-tm{display:flex;align-items:center;justify-content:flex-end;gap:3px;font-size:9.5px;color:#8e9095;margin-top:2px}
+    .ss-read{color:#4fc3f7;font-size:9px}
+    .ss-date-chip{text-align:center;margin:4px 0}
+    .ss-date-chip span{background:rgba(255,255,255,0.7);color:#546e7a;font-size:10px;padding:3px 10px;border-radius:8px;display:inline-block;backdrop-filter:blur(4px)}
+    .ss-card-label{background:var(--bg2);padding:12px 14px;display:flex;align-items:center;gap:8px;border-top:1px solid rgba(255,255,255,0.05)}
+    .ss-card-label i{color:#25d366;font-size:13px}
+    .ss-card-label span{font-size:11px;color:var(--muted);font-weight:600}
+    @media(max-width:900px){.ss-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.ss-grid{grid-template-columns:1fr}}
+
+    /* ─── PAYMENT SECTION ─── */
+    #payments{background:var(--bg2)}
+    .pay-hd{text-align:center;margin-bottom:52px}
+    .pay-methods-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px}
+    /* PayPal card */
+    .pay-card{border-radius:20px;overflow:hidden;transition:var(--t);box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+    .pay-card:hover{transform:translateY(-8px);box-shadow:0 20px 55px rgba(0,0,0,0.55)}
+    .pay-card-header{padding:28px 24px 20px;display:flex;align-items:center;gap:14px}
+    .pay-logo-circle{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;flex-shrink:0;color:#fff;font-family:'Inter',sans-serif;letter-spacing:-1px}
+    .pay-brand-name{font-size:20px;font-weight:900;letter-spacing:-0.5px}
+    .pay-brand-sub{font-size:11px;opacity:0.75;margin-top:2px;font-weight:500}
+    .pay-card-body{padding:0 24px 24px;display:flex;flex-direction:column;gap:9px}
+    .pay-row{display:flex;align-items:center;gap:8px;font-size:12.5px}
+    .pay-row i{width:16px;text-align:center;font-size:12px}
+    .pay-card-footer{padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.1)}
+    .pay-badge{font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:20px;background:rgba(255,255,255,0.15)}
+    .pay-secure{font-size:10px;display:flex;align-items:center;gap:5px;opacity:0.7}
+
+    /* PayPal colors */
+    .pay-pp{background:linear-gradient(145deg,#003087,#009cde)}
+    .pay-pp .pay-logo-circle{background:rgba(255,255,255,0.15)}
+    .pay-pp *{color:#fff}
+
+    /* Western Union colors */
+    .pay-wu{background:linear-gradient(145deg,#403000,#c89200)}
+    .pay-wu .pay-logo-circle{background:rgba(0,0,0,0.2)}
+    .pay-wu *{color:#fff}
+    .pay-wu .pay-brand-name{color:#ffe066}
+
+    /* MoneyGram colors */
+    .pay-mg{background:linear-gradient(145deg,#7a0010,#e31837)}
+    .pay-mg .pay-logo-circle{background:rgba(255,255,255,0.15)}
+    .pay-mg *{color:#fff}
+
+    /* Extra payment methods row */
+    .pay-extra-row{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:36px}
+    .pay-extra-chip{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:50px;padding:8px 18px;font-size:13px;font-weight:600;color:var(--muted);transition:var(--t)}
+    .pay-extra-chip:hover{border-color:rgba(0,212,255,0.35);color:#fff}
+    .pay-extra-chip i{font-size:15px}
+
+    /* Trust seal row */
+    .pay-trust-row{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;padding-top:32px;border-top:1px solid var(--border)}
+    .pay-seal{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted);font-weight:600}
+    .pay-seal-ico{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+
+    @media(max-width:900px){.pay-methods-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.pay-extra-row{gap:10px}.pay-trust-row{gap:18px}}
+
+    /* ─── PAYMENT PROOF MOCKUPS ─── */
+    #pay-proof{background:var(--bg)}
+    .pp-hd{text-align:center;margin-bottom:52px}
+    .pp-recommended-tag{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(90deg,rgba(0,212,255,0.15),rgba(123,47,255,0.15));border:1px solid rgba(0,212,255,0.35);border-radius:50px;padding:5px 14px;font-size:10px;font-weight:800;letter-spacing:2px;color:var(--cyan);text-transform:uppercase;margin-bottom:8px}
+    .pp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:44px}
+    .pp-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+    .pp-label-top{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:4px}
+    .pp-rank{font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+
+    /* Phone shell */
+    .pay-phone{width:100%;max-width:300px;background:#1a1a2e;border-radius:36px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,0.7),0 0 0 2px rgba(255,255,255,0.08),inset 0 0 0 6px #0d0d1a;position:relative}
+    .pay-phone::before{content:'';position:absolute;top:12px;left:50%;transform:translateX(-50%);width:60px;height:5px;background:rgba(255,255,255,0.12);border-radius:10px;z-index:10}
+    .pay-phone-inner{border-radius:28px;overflow:hidden;margin:20px 6px 6px}
+
+    /* Status bar (light) */
+    .pstatus{display:flex;align-items:center;justify-content:space-between;padding:8px 14px 4px;font-size:10px;font-weight:700}
+    .pstatus-icons{display:flex;align-items:center;gap:5px;font-size:10px}
+
+    /* ── PayPal screen ── */
+    .paypal-screen{background:#fff;font-family:'Inter',sans-serif}
+    .paypal-screen .pstatus{background:#fff;color:#222}
+    .pp-nav{background:#003087;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+    .pp-nav-back{color:#fff;font-size:14px}
+    .pp-nav-logo{font-size:13px;font-weight:900;color:#fff;letter-spacing:-0.5px}
+    .pp-nav-logo span{color:#009cde}
+    .pp-nav-more{color:rgba(255,255,255,0.7);font-size:16px}
+    .pp-success-zone{background:#fff;padding:24px 20px 16px;text-align:center;border-bottom:1px solid #f0f0f0}
+    .pp-check-circle{width:62px;height:62px;background:#00a650;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:26px;color:#fff;box-shadow:0 4px 18px rgba(0,166,80,0.35)}
+    .pp-sent-label{font-size:12px;color:#555;font-weight:600;margin-bottom:4px}
+    .pp-amount{font-size:34px;font-weight:900;color:#111;line-height:1;margin-bottom:2px}
+    .pp-currency{font-size:13px;color:#777;margin-bottom:16px}
+    .pp-to-row{display:flex;align-items:center;justify-content:center;gap:7px;font-size:12px;color:#333;font-weight:600}
+    .pp-to-avatar{width:26px;height:26px;border-radius:50%;background:#003087;color:#fff;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center}
+    .pp-details{background:#f8f8f8;margin:0;padding:16px 20px;display:flex;flex-direction:column;gap:10px}
+    .pp-detail-row{display:flex;justify-content:space-between;font-size:11px}
+    .pp-detail-row .pk{color:#777;font-weight:500}
+    .pp-detail-row .pv{color:#111;font-weight:700}
+    .pp-detail-row .pv.green{color:#00a650}
+    .pp-status-bar-bottom{background:#003087;padding:10px 20px;text-align:center;font-size:10px;color:rgba(255,255,255,0.8);font-weight:600}
+
+    /* ── Western Union screen ── */
+    .wu-screen{background:#fff;font-family:'Inter',sans-serif}
+    .wu-screen .pstatus{background:#fff;color:#222}
+    .wu-nav{background:#ffd700;padding:12px 16px;display:flex;align-items:center;gap:10px}
+    .wu-nav-back{color:#000;font-size:14px}
+    .wu-nav-logo{font-size:12px;font-weight:900;color:#000;letter-spacing:-0.3px;flex:1}
+    .wu-success-zone{background:#fff;padding:20px 18px 14px;text-align:center;border-bottom:1px solid #f0f0f0}
+    .wu-check-circle{width:58px;height:58px;background:#ffd700;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:24px;color:#000;box-shadow:0 4px 16px rgba(255,215,0,0.45)}
+    .wu-title{font-size:14px;font-weight:900;color:#000;margin-bottom:4px}
+    .wu-subtitle{font-size:10px;color:#888;margin-bottom:14px}
+    .wu-amount-box{background:#fff9e0;border:2px solid #ffd700;border-radius:12px;padding:12px;margin-bottom:14px}
+    .wu-amount-label{font-size:9px;color:#888;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+    .wu-amount-val{font-size:26px;font-weight:900;color:#000;line-height:1}
+    .wu-details{padding:0 18px 14px;display:flex;flex-direction:column;gap:9px}
+    .wu-row{display:flex;justify-content:space-between;align-items:flex-start;font-size:10.5px;padding-bottom:8px;border-bottom:1px solid #f5f5f5}
+    .wu-row:last-child{border-bottom:none}
+    .wu-row .wk{color:#888;font-weight:500}
+    .wu-row .wv{color:#111;font-weight:700;text-align:right;max-width:55%}
+    .wu-row .wv.gold{color:#b8860b}
+    .wu-footer{background:#ffd700;padding:10px 18px;display:flex;align-items:center;gap:7px;font-size:10px;font-weight:800;color:#000}
+
+    /* ── MoneyGram screen ── */
+    .mg-screen{background:#fff;font-family:'Inter',sans-serif}
+    .mg-screen .pstatus{background:#e31837;color:#fff}
+    .mg-screen .pstatus-icons{color:#fff}
+    .mg-nav{background:#e31837;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+    .mg-nav-back{color:#fff;font-size:14px}
+    .mg-nav-logo{font-size:12px;font-weight:900;color:#fff}
+    .mg-nav-more{color:rgba(255,255,255,0.7);font-size:16px}
+    .mg-success-zone{background:#fff;padding:20px 18px 14px;text-align:center;border-bottom:1px solid #f0f0f0}
+    .mg-check-circle{width:58px;height:58px;background:#e31837;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px;color:#fff;box-shadow:0 4px 16px rgba(227,24,55,0.4)}
+    .mg-title{font-size:14px;font-weight:900;color:#111;margin-bottom:4px}
+    .mg-amount{font-size:28px;font-weight:900;color:#e31837;margin-bottom:4px}
+    .mg-details{padding:14px 18px;display:flex;flex-direction:column;gap:9px}
+    .mg-row{display:flex;justify-content:space-between;font-size:10.5px;padding-bottom:8px;border-bottom:1px solid #f5f5f5}
+    .mg-row:last-child{border-bottom:none}
+    .mg-row .mk{color:#888;font-weight:500}
+    .mg-row .mv{color:#111;font-weight:700}
+    .mg-row .mv.red{color:#e31837}
+    .mg-footer{background:#e31837;padding:10px 18px;text-align:center;font-size:10px;color:#fff;font-weight:700}
+
+    /* Comparison bar below screenshots */
+    .pay-compare-bar{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:16px;padding:28px 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:0;align-items:center;margin-bottom:16px}
+    .pay-compare-bar.head{background:rgba(0,212,255,0.06);border-color:rgba(0,212,255,0.2)}
+    .pay-compare-cell{text-align:center;font-size:12px;color:var(--muted);padding:0 6px}
+    .pay-compare-cell.name{text-align:left;font-size:13px;font-weight:700;color:#fff}
+    .pay-compare-cell.head-cell{font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan)}
+    .pay-compare-cell.head-cell.first{text-align:left}
+    .star-rating{color:#ffd700;font-size:12px;letter-spacing:1px}
+    .pay-rec-badge{display:inline-block;background:var(--grad);color:#fff;font-size:9px;font-weight:800;padding:2px 8px;border-radius:20px;margin-left:6px;vertical-align:middle}
+    .pay-green{color:#00ff88;font-weight:700}
+    .pay-yellow{color:#ffd700;font-weight:700}
+    .pay-muted{color:var(--muted)}
+
+    @media(max-width:900px){.pp-grid{grid-template-columns:1fr}.pay-compare-bar{grid-template-columns:1fr 1fr 1fr;gap:10px}.pay-compare-bar .pay-compare-cell:nth-child(1){grid-column:1/-1;text-align:left}.pay-compare-bar.head .pay-compare-cell:nth-child(1){display:none}}
+    @media(max-width:600px){.pay-compare-bar{display:none}}
+
+    /* ─── CHANNELS TICKER ─── */
+    .ticker-wrap{padding:18px 0;background:rgba(255,255,255,0.018);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .ticker-mask{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+    .ticker-row{display:flex;margin-bottom:10px}.ticker-row:last-child{margin-bottom:0}
+    .ticker-track{display:flex;gap:12px;width:max-content;animation:tick 32s linear infinite;align-items:center}
+    .ticker-track.rev{animation-duration:42s;animation-direction:reverse}
+    @keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .ch-pill{display:inline-flex;align-items:center;gap:7px;padding:6px 15px;border-radius:50px;background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.09);font-size:12px;font-weight:600;color:#ccc;white-space:nowrap;flex-shrink:0}
+    .ch-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+    /* ─── MOVIES MARQUEE ─── */
+    .movies-sec{padding:80px 0;background:var(--bg2);overflow:hidden}
+    .movies-hd{text-align:center;margin-bottom:44px}
+    .mq-mask{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+    .mq-row{display:flex;gap:14px;width:max-content;animation:mq 62s linear infinite;margin-bottom:14px}
+    .mq-row.rev{animation-direction:reverse;animation-duration:52s}
+    .mq-row:last-child{margin-bottom:0}
+    @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .poster{width:148px;height:218px;border-radius:14px;flex-shrink:0;position:relative;overflow:hidden;cursor:pointer;transition:transform 0.35s ease,box-shadow 0.35s ease}
+    .poster:hover{transform:scale(1.08) translateY(-5px);box-shadow:0 24px 60px rgba(0,0,0,0.8)}
+    .poster-bg{position:absolute;inset:0}
+    .poster-ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.08) 52%,transparent 100%)}
+    .poster-badge{position:absolute;top:9px;right:9px;background:rgba(0,0,0,0.65);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:9px;font-weight:800;padding:3px 7px;border-radius:5px;letter-spacing:0.3px}
+    .poster-info{position:absolute;bottom:0;left:0;right:0;padding:12px 11px}
+    .poster-rating{font-size:10px;color:#ffd700;font-weight:700;margin-bottom:3px}
+    .poster-title{font-size:12px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:3px}
+    .poster-genre{font-size:10px;color:rgba(255,255,255,0.52)}
+
+    /* ─── APPS & BOXES ─── */
+    .apps-sec{padding:80px 0;background:var(--bg)}
+    .apps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:50px}
+    .app-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px 14px;text-align:center;transition:var(--t)}
+    .app-card:hover{transform:translateY(-8px)}
+    .app-ico{width:62px;height:62px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 13px;font-size:28px;transition:transform 0.3s ease}
+    .app-card:hover .app-ico{transform:scale(1.12)}
+    .app-name{font-size:12px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.3}
+    .app-tag{display:inline-block;font-size:9px;font-weight:700;padding:2px 9px;border-radius:50px}
+    .tag-app{background:rgba(0,212,255,0.12);color:var(--cyan);border:1px solid rgba(0,212,255,0.28)}
+    .tag-box{background:rgba(123,47,255,0.12);color:#b39dff;border:1px solid rgba(123,47,255,0.3)}
+    @media(max-width:900px){.apps-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:480px){.apps-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mmenu" id="mmenu">
+  <button class="mmenu-close" id="mclose"><i class="fas fa-times"></i></button>
+  <ul>
+    <li><a href="#" onclick="closeMM()">Home</a></li>
+    <li><a href="#pricing" onclick="closeMM()">Pricing</a></li>
+    <li><a href="#devices" onclick="closeMM()">Devices</a></li>
+    <li><a href="#testimonials" onclick="closeMM()">Reviews</a></li>
+    <li><a href="#faq" onclick="closeMM()">FAQ</a></li>
+  </ul>
+  <a href="https://wa.me/447400704898" target="_blank" class="btn btn-p" onclick="closeMM()"><i class="fas fa-rocket"></i> Get Started</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+          <path d="M10 7.5L18 12L10 16.5V7.5Z" fill="white"/>
+          <path d="M5.5 9.5Q7.2 12 5.5 14.5" stroke="rgba(255,255,255,0.78)" stroke-width="1.9" stroke-linecap="round"/>
+          <path d="M3 7.5Q6 12 3 16.5" stroke="rgba(255,255,255,0.38)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">Best<span>IPTV</span></span>
+        <span class="logo-sub">Today</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#devices">Devices</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://wa.me/447400704898" target="_blank" class="btn-login"><i class="fas fa-clock"></i> 24H Free Test</a>
+      <a href="https://wa.me/447400704898" target="_blank" class="btn-cta">Get Started</a>
+    </div>
+    <button class="hamburger" id="hbg" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="fcard c1">
+    <div class="fcard-ico" style="background:rgba(0,212,255,0.13)">📺</div>
+    <div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:1px">Live Now</div>
+      <div>25,000+ Channels</div>
+    </div>
+  </div>
+  <div class="fcard c2">
+    <div class="fcard-ico" style="background:rgba(123,47,255,0.13)">🎬</div>
+    <div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:1px">On Demand</div>
+      <div>60,000+ Movies</div>
+    </div>
+  </div>
+  <div class="fcard c3">
+    <div class="fcard-ico" style="background:rgba(255,45,206,0.13)">⚡</div>
+    <div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:1px">Performance</div>
+      <div>Zero Buffering</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Live Streaming – Available Now
+      </div>
+      <h1 class="hero-title">
+        Best IPTV Subscription –<br>
+        <span class="grad">25,000+ Channels</span><br>
+        in HD &amp; 4K
+      </h1>
+      <p class="hero-sub">
+        Watch sports, movies, and international channels with zero buffering.
+        Premium quality, instant activation, and 24/7 expert support.
+      </p>
+      <div class="hero-cta">
+        <a href="https://wa.me/447400704898" target="_blank" class="btn btn-p"><i class="fas fa-rocket"></i> Get Started</a>
+        <a href="https://wa.me/447400704898" target="_blank" class="btn btn-o"><i class="fas fa-tag"></i> View Plans</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-n grad">25K+</div>
+          <div class="hstat-l">Live Channels</div>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <div class="hstat-n grad">60K+</div>
+          <div class="hstat-l">Movies &amp; Series</div>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <div class="hstat-n grad">4K</div>
+          <div class="hstat-l">Ultra HD Quality</div>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <div class="hstat-n grad">99.9%</div>
+          <div class="hstat-l">Uptime Guarantee</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container trust-inner">
+    <div class="trust-item"><i class="fas fa-shield-alt"></i> Secure Payment</div>
+    <div class="trust-item"><i class="fas fa-bolt"></i> Instant Activation</div>
+    <div class="trust-item"><i class="fas fa-headset"></i> 24/7 Support</div>
+    <div class="trust-item"><i class="fas fa-undo"></i> 7-Day Guarantee</div>
+    <div class="trust-item"><i class="fas fa-lock"></i> No Contract</div>
+  </div>
+</div>
+
+<!-- CHANNELS TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-mask">
+    <div class="ticker-row">
+      <div class="ticker-track">
+        <div class="ch-pill"><span class="ch-dot" style="background:#b90000"></span>beIN Sports 1</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#cc0001"></span>BBC One</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#cc0000"></span>CNN International</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#d00"></span>ESPN HD</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0057a8"></span>Sky Sports</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#f7ce00"></span>Al Jazeera</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0033a0"></span>Fox Sports</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00bcd4"></span>DAZN</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#f47920"></span>Eurosport</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00843d"></span>MBC</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#8b0000"></span>OSN Sports</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0032a0"></span>Canal+</div>
+        <!-- duplicate for seamless loop -->
+        <div class="ch-pill"><span class="ch-dot" style="background:#b90000"></span>beIN Sports 1</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#cc0001"></span>BBC One</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#cc0000"></span>CNN International</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#d00"></span>ESPN HD</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0057a8"></span>Sky Sports</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#f7ce00"></span>Al Jazeera</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0033a0"></span>Fox Sports</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00bcd4"></span>DAZN</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#f47920"></span>Eurosport</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00843d"></span>MBC</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#8b0000"></span>OSN Sports</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0032a0"></span>Canal+</div>
+      </div>
+    </div>
+    <div class="ticker-row">
+      <div class="ticker-track rev">
+        <div class="ch-pill"><span class="ch-dot" style="background:#e50914"></span>Netflix</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00a8e0"></span>HBO Max</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#113ccf"></span>Disney+</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00a8e0"></span>Prime Video</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#003087"></span>Paramount+</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#ff6600"></span>Showtime</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#ffcc00"></span>National Geographic</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#009fe3"></span>Discovery</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#ff0080"></span>MTV</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#003399"></span>TF1</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0057a8"></span>Sky Cinema</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#5000be"></span>Starz</div>
+        <!-- duplicate -->
+        <div class="ch-pill"><span class="ch-dot" style="background:#e50914"></span>Netflix</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00a8e0"></span>HBO Max</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#113ccf"></span>Disney+</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#00a8e0"></span>Prime Video</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#003087"></span>Paramount+</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#ff6600"></span>Showtime</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#ffcc00"></span>National Geographic</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#009fe3"></span>Discovery</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#ff0080"></span>MTV</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#003399"></span>TF1</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#0057a8"></span>Sky Cinema</div>
+        <div class="ch-pill"><span class="ch-dot" style="background:#5000be"></span>Starz</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <div class="container">
+    <div class="fi">
+      <div class="label">Why Choose Us</div>
+      <h2 class="title">Everything You Need for<br><span class="grad">Ultimate Entertainment</span></h2>
+      <p class="sub">Experience next-generation TV streaming built for speed, quality, and rock-solid reliability.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card fi d1">
+        <div class="feat-ico" style="background:rgba(0,212,255,0.12);color:var(--cyan)"><i class="fas fa-tv"></i></div>
+        <h3 class="feat-title">25,000+ Live Channels</h3>
+        <p class="feat-desc">Access thousands of channels worldwide — sports, news, entertainment, kids, and more in crystal-clear quality.</p>
+      </div>
+      <div class="feat-card fi d2">
+        <div class="feat-ico" style="background:rgba(123,47,255,0.12);color:var(--purple)"><i class="fas fa-film"></i></div>
+        <h3 class="feat-title">60,000+ Movies &amp; Series</h3>
+        <p class="feat-desc">Massive on-demand library with the latest movies, hit TV series, and exclusive content updated daily.</p>
+      </div>
+      <div class="feat-card fi d3">
+        <div class="feat-ico" style="background:rgba(255,215,0,0.12);color:#ffd700"><i class="fas fa-gem"></i></div>
+        <h3 class="feat-title">Ultra HD &amp; 4K Streaming</h3>
+        <p class="feat-desc">Crystal-clear picture quality in Full HD, 4K, and 8K. Experience television like never before on any screen.</p>
+      </div>
+      <div class="feat-card fi d1">
+        <div class="feat-ico" style="background:rgba(0,255,136,0.12);color:#00ff88"><i class="fas fa-tachometer-alt"></i></div>
+        <h3 class="feat-title">Zero Buffering</h3>
+        <p class="feat-desc">Enterprise-grade servers with blazing load speeds. Say goodbye to freezing and buffering forever.</p>
+      </div>
+      <div class="feat-card fi d2">
+        <div class="feat-ico" style="background:rgba(255,45,206,0.12);color:var(--pink)"><i class="fas fa-mobile-alt"></i></div>
+        <h3 class="feat-title">Works on All Devices</h3>
+        <p class="feat-desc">Smart TV, Android, iOS, Firestick, PC, MAG box — one subscription works everywhere across all your screens.</p>
+      </div>
+      <div class="feat-card fi d3">
+        <div class="feat-ico" style="background:rgba(0,212,255,0.12);color:var(--cyan)"><i class="fas fa-headset"></i></div>
+        <h3 class="feat-title">24/7 Live Support</h3>
+        <p class="feat-desc">Our expert team is available around the clock via WhatsApp, email, and live chat to solve any issue instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOVIES MARQUEE -->
+<section class="movies-sec">
+  <div class="movies-hd">
+    <div class="label" style="justify-content:center">On Demand Library</div>
+    <h2 class="title">60,000+ Movies &amp; Series — <span class="grad">Updated Daily</span></h2>
+    <p class="sub" style="margin:0 auto;text-align:center">Latest blockbusters, hit series, and exclusive content always available.</p>
+  </div>
+  <div class="mq-mask">
+    <!-- Row 1 -->
+    <div class="mq-row">
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#2d1500,#8b4500,#c07800)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.5</div><div class="poster-title">Dune: Part Two</div><div class="poster-genre">Sci-Fi · Adventure</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001833,#0a4a8c,#006acc)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.6</div><div class="poster-title">Avatar: The Way of Water</div><div class="poster-genre">Action · Sci-Fi</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0000,#8b0000,#1a1a55)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 8.4</div><div class="poster-title">Avengers: Endgame</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#07070f,#0d0d22,#1a1a11)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.9</div><div class="poster-title">The Batman</div><div class="poster-genre">Action · Drama</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d0800,#4a2000,#8b4200)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.3</div><div class="poster-title">Oppenheimer</div><div class="poster-genre">Drama · History</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#4a0030,#cc0077,#ff55bb)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">Barbie</div><div class="poster-genre">Comedy · Fantasy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#080808,#1a1a00,#3a3500)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.7</div><div class="poster-title">John Wick: Chapter 4</div><div class="poster-genre">Action · Thriller</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0000,#8b0000,#00006b)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.2</div><div class="poster-title">Spider-Man: No Way Home</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d0d22,#1a0066,#5500bb)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.3</div><div class="poster-title">Black Panther: Wakanda</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a0a0a,#2a0000,#880000)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 5.9</div><div class="poster-title">Fast X</div><div class="poster-genre">Action · Racing</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d1a00,#223a00,#446600)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.2</div><div class="poster-title">Godzilla x Kong</div><div class="poster-genre">Action · Monster</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0800,#551800,#882200)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.8</div><div class="poster-title">Furiosa</div><div class="poster-genre">Action · Post-Apo</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a33,#003366,#0055aa)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.9</div><div class="poster-title">Inside Out 2</div><div class="poster-genre">Animation · Family</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a1200,#3a2800,#6b4a00)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.8</div><div class="poster-title">Kingdom of the Apes</div><div class="poster-genre">Sci-Fi · Action</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001122,#002244,#003a66)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">The Fall Guy</div><div class="poster-genre">Action · Comedy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0d00,#3a2000,#664400)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.2</div><div class="poster-title">Kung Fu Panda 4</div><div class="poster-genre">Animation · Action</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#070707,#0f0f0f,#0a0f0a)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 6.9</div><div class="poster-title">A Quiet Place: Day One</div><div class="poster-genre">Horror · Sci-Fi</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#220011,#550022,#880044)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.8</div><div class="poster-title">Challengers</div><div class="poster-genre">Drama · Sport</div></div></div>
+      <!-- duplicate row 1 -->
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#2d1500,#8b4500,#c07800)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.5</div><div class="poster-title">Dune: Part Two</div><div class="poster-genre">Sci-Fi · Adventure</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001833,#0a4a8c,#006acc)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.6</div><div class="poster-title">Avatar: The Way of Water</div><div class="poster-genre">Action · Sci-Fi</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0000,#8b0000,#1a1a55)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 8.4</div><div class="poster-title">Avengers: Endgame</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#07070f,#0d0d22,#1a1a11)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.9</div><div class="poster-title">The Batman</div><div class="poster-genre">Action · Drama</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d0800,#4a2000,#8b4200)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.3</div><div class="poster-title">Oppenheimer</div><div class="poster-genre">Drama · History</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#4a0030,#cc0077,#ff55bb)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">Barbie</div><div class="poster-genre">Comedy · Fantasy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#080808,#1a1a00,#3a3500)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.7</div><div class="poster-title">John Wick: Chapter 4</div><div class="poster-genre">Action · Thriller</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0000,#8b0000,#00006b)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.2</div><div class="poster-title">Spider-Man: No Way Home</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d0d22,#1a0066,#5500bb)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.3</div><div class="poster-title">Black Panther: Wakanda</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a0a0a,#2a0000,#880000)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 5.9</div><div class="poster-title">Fast X</div><div class="poster-genre">Action · Racing</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d1a00,#223a00,#446600)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.2</div><div class="poster-title">Godzilla x Kong</div><div class="poster-genre">Action · Monster</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0800,#551800,#882200)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.8</div><div class="poster-title">Furiosa</div><div class="poster-genre">Action · Post-Apo</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a33,#003366,#0055aa)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.9</div><div class="poster-title">Inside Out 2</div><div class="poster-genre">Animation · Family</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a1200,#3a2800,#6b4a00)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.8</div><div class="poster-title">Kingdom of the Apes</div><div class="poster-genre">Sci-Fi · Action</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001122,#002244,#003a66)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">The Fall Guy</div><div class="poster-genre">Action · Comedy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0d00,#3a2000,#664400)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.2</div><div class="poster-title">Kung Fu Panda 4</div><div class="poster-genre">Animation · Action</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#070707,#0f0f0f,#0a0f0a)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 6.9</div><div class="poster-title">A Quiet Place: Day One</div><div class="poster-genre">Horror · Sci-Fi</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#220011,#550022,#880044)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.8</div><div class="poster-title">Challengers</div><div class="poster-genre">Drama · Sport</div></div></div>
+    </div>
+    <!-- Row 2 -->
+    <div class="mq-row rev">
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#330000,#990000,#dd1111)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.9</div><div class="poster-title">Deadpool &amp; Wolverine</div><div class="poster-genre">Action · Comedy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001522,#004466,#00aacc)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 6.5</div><div class="poster-title">Aquaman 2</div><div class="poster-genre">Action · DC</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#00100d,#003322,#006644)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.0</div><div class="poster-title">Mission: Impossible 7</div><div class="poster-genre">Action · Spy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0d00,#3a1800,#6b3000)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.7</div><div class="poster-title">Killers of the Flower Moon</div><div class="poster-genre">Drama · Crime</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0033,#5500aa,#aa44ff)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">Wonka</div><div class="poster-genre">Fantasy · Musical</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d0d00,#1a1a33,#3333aa)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.9</div><div class="poster-title">Napoleon</div><div class="poster-genre">Drama · History</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a1500,#1a3300,#2a5500)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.3</div><div class="poster-title">Civil War</div><div class="poster-genre">Action · Drama</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#000d00,#001500,#002800)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.1</div><div class="poster-title">Alien: Romulus</div><div class="poster-genre">Sci-Fi · Horror</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a1a,#003344,#006677)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.8</div><div class="poster-title">Twisters</div><div class="poster-genre">Action · Disaster</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a001a,#440044,#880088)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.8</div><div class="poster-title">Poor Things</div><div class="poster-genre">Drama · Fantasy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a1000,#3a2a00,#5a4200)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.5</div><div class="poster-title">Gladiator II</div><div class="poster-genre">Action · History</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a22,#002a44,#004466)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.3</div><div class="poster-title">Moana 2</div><div class="poster-genre">Animation · Adventure</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a0a0a,#0f0022,#1a0035)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 6.0</div><div class="poster-title">Venom: The Last Dance</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0000,#3a0000,#660000)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 5.4</div><div class="poster-title">Joker: Folie à Deux</div><div class="poster-genre">Drama · Musical</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a0d,#003322,#005533)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.0</div><div class="poster-title">The Wild Robot</div><div class="poster-genre">Animation · Drama</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d1a00,#1a3300,#2a4a00)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">Transformers One</div><div class="poster-genre">Animation · Sci-Fi</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a0a0a,#111111,#0a1520)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.3</div><div class="poster-title">Speak No Evil</div><div class="poster-genre">Horror · Thriller</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#100000,#280000,#400000)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.7</div><div class="poster-title">Longlegs</div><div class="poster-genre">Horror · Crime</div></div></div>
+      <!-- duplicate row 2 -->
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#330000,#990000,#dd1111)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.9</div><div class="poster-title">Deadpool &amp; Wolverine</div><div class="poster-genre">Action · Comedy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001522,#004466,#00aacc)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 6.5</div><div class="poster-title">Aquaman 2</div><div class="poster-genre">Action · DC</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#00100d,#003322,#006644)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.0</div><div class="poster-title">Mission: Impossible 7</div><div class="poster-genre">Action · Spy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0d00,#3a1800,#6b3000)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.7</div><div class="poster-title">Killers of the Flower Moon</div><div class="poster-genre">Drama · Crime</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0033,#5500aa,#aa44ff)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">Wonka</div><div class="poster-genre">Fantasy · Musical</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d0d00,#1a1a33,#3333aa)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.9</div><div class="poster-title">Napoleon</div><div class="poster-genre">Drama · History</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a1500,#1a3300,#2a5500)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.3</div><div class="poster-title">Civil War</div><div class="poster-genre">Action · Drama</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#000d00,#001500,#002800)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.1</div><div class="poster-title">Alien: Romulus</div><div class="poster-genre">Sci-Fi · Horror</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a1a,#003344,#006677)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.8</div><div class="poster-title">Twisters</div><div class="poster-genre">Action · Disaster</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a001a,#440044,#880088)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 7.8</div><div class="poster-title">Poor Things</div><div class="poster-genre">Drama · Fantasy</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a1000,#3a2a00,#5a4200)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.5</div><div class="poster-title">Gladiator II</div><div class="poster-genre">Action · History</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a22,#002a44,#004466)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.3</div><div class="poster-title">Moana 2</div><div class="poster-genre">Animation · Adventure</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a0a0a,#0f0022,#1a0035)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 6.0</div><div class="poster-title">Venom: The Last Dance</div><div class="poster-genre">Action · Marvel</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#1a0000,#3a0000,#660000)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 5.4</div><div class="poster-title">Joker: Folie à Deux</div><div class="poster-genre">Drama · Musical</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#001a0d,#003322,#005533)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 8.0</div><div class="poster-title">The Wild Robot</div><div class="poster-genre">Animation · Drama</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0d1a00,#1a3300,#2a4a00)"></div><div class="poster-ov"></div><div class="poster-badge">4K</div><div class="poster-info"><div class="poster-rating">★ 7.0</div><div class="poster-title">Transformers One</div><div class="poster-genre">Animation · Sci-Fi</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#0a0a0a,#111111,#0a1520)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.3</div><div class="poster-title">Speak No Evil</div><div class="poster-genre">Horror · Thriller</div></div></div>
+      <div class="poster"><div class="poster-bg" style="background:linear-gradient(155deg,#100000,#280000,#400000)"></div><div class="poster-ov"></div><div class="poster-badge">HD</div><div class="poster-info"><div class="poster-rating">★ 6.7</div><div class="poster-title">Longlegs</div><div class="poster-genre">Horror · Crime</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="price-hd fi">
+      <div class="label">Simple Pricing</div>
+      <h2 class="title">Choose Your <span class="grad">Perfect Plan</span></h2>
+      <p class="sub" style="margin:0 auto">All plans include full access to channels, movies, and 24/7 support. Start watching immediately.</p>
+    </div>
+    <div class="price-grid">
+
+      <!-- 1 Month -->
+      <div class="price-card fi d1">
+        <div class="price-dur">1 Month</div>
+        <div class="price-row">
+          <span class="p-cur">$</span>
+          <span class="p-amt">18</span>
+          <span class="p-per">/mo</span>
+        </div>
+        <div class="p-orig">Was $30/mo</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 25,000+ Live Channels</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 60,000+ VOD Library</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Full HD Quality</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 1 Connection</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Email Support</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Instant Activation</li>
+        </ul>
+        <a href="https://wa.me/447400704898" target="_blank" class="pbtn pbtn-o">Buy Now</a>
+      </div>
+
+      <!-- 3 Months -->
+      <div class="price-card fi d2">
+        <div class="price-dur">3 Months <span class="sbadge">Save 20%</span></div>
+        <div class="price-row">
+          <span class="p-cur">$</span>
+          <span class="p-amt">29</span>
+          <span class="p-per">/3mo</span>
+        </div>
+        <div class="p-orig">Was $36</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 25,000+ Live Channels</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 60,000+ VOD Library</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Full HD &amp; 4K Quality</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 2 Connections</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Priority Support</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Instant Activation</li>
+        </ul>
+        <a href="https://wa.me/447400704898" target="_blank" class="pbtn pbtn-o">Buy Now</a>
+      </div>
+
+      <!-- 6 Months FEATURED -->
+      <div class="price-card feat fi d3">
+        <div class="best-badge">⭐ Best Value</div>
+        <div class="price-dur">6 Months <span class="sbadge">Save 40%</span></div>
+        <div class="price-row">
+          <span class="p-cur">$</span>
+          <span class="p-amt">49</span>
+          <span class="p-per">/6mo</span>
+        </div>
+        <div class="p-orig">Was $72</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 25,000+ Live Channels</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 60,000+ VOD Library</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Ultra HD &amp; 4K Quality</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 3 Connections</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 24/7 Priority Support</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Instant Activation</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Free EPG TV Guide</li>
+        </ul>
+        <a href="https://wa.me/447400704898" target="_blank" class="pbtn pbtn-f">Buy Now</a>
+      </div>
+
+      <!-- 12 Months -->
+      <div class="price-card fi d4">
+        <div class="price-dur">12 Months <span class="sbadge">Save 55%</span></div>
+        <div class="price-row">
+          <span class="p-cur">$</span>
+          <span class="p-amt">79</span>
+          <span class="p-per">/yr</span>
+        </div>
+        <div class="p-orig">Was $144/yr</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 25,000+ Live Channels</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 60,000+ VOD Library</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Ultra HD &amp; 4K Quality</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 5 Connections</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> 24/7 VIP Support</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Instant Activation</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Free EPG TV Guide</li>
+          <li><span class="ck"><i class="fas fa-check-circle"></i></span> Anti-Freeze Technology</li>
+        </ul>
+        <a href="https://wa.me/447400704898" target="_blank" class="pbtn pbtn-o">Buy Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DEVICES -->
+<section id="devices" class="section">
+  <div class="container">
+    <div class="dev-hd fi">
+      <div class="label">Compatible Devices</div>
+      <h2 class="title">Works on <span class="grad">All Your Screens</span></h2>
+      <p class="sub" style="margin:0 auto">One subscription, unlimited screens. Use our service on any device, anywhere, anytime.</p>
+    </div>
+    <div class="dev-grid">
+      <div class="dev-card fi d1"><span class="dev-ico">📺</span><span class="dev-name">Smart TV</span></div>
+      <div class="dev-card fi d2"><span class="dev-ico">📱</span><span class="dev-name">Android</span></div>
+      <div class="dev-card fi d3"><span class="dev-ico">🍎</span><span class="dev-name">iPhone / iOS</span></div>
+      <div class="dev-card fi d1"><span class="dev-ico">🔥</span><span class="dev-name">Firestick</span></div>
+      <div class="dev-card fi d2"><span class="dev-ico">💻</span><span class="dev-name">PC / Mac</span></div>
+      <div class="dev-card fi d3"><span class="dev-ico">📦</span><span class="dev-name">MAG Box</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPS & BOXES -->
+<section class="apps-sec">
+  <div class="container">
+    <div class="fi" style="text-align:center">
+      <div class="label" style="justify-content:center">100% Compatible</div>
+      <h2 class="title">Top Apps &amp; Boxes <span class="grad">We Support</span></h2>
+      <p class="sub" style="margin:0 auto;text-align:center">Works with the most popular IPTV players and streaming boxes on the market.</p>
+    </div>
+    <div class="apps-grid">
+      <!-- Apps -->
+      <div class="app-card fi d1">
+        <div class="app-ico" style="background:linear-gradient(135deg,#1a0044,#5500cc)"><i class="fas fa-play-circle" style="color:#aa66ff"></i></div>
+        <div class="app-name">IBO Player Pro</div>
+        <span class="app-tag tag-app">App</span>
+      </div>
+      <div class="app-card fi d2">
+        <div class="app-ico" style="background:linear-gradient(135deg,#001a44,#0044aa)"><i class="fas fa-th-large" style="color:#66aaff"></i></div>
+        <div class="app-name">TiviMate</div>
+        <span class="app-tag tag-app">App</span>
+      </div>
+      <div class="app-card fi d3">
+        <div class="app-ico" style="background:linear-gradient(135deg,#1a1a00,#554400)"><i class="fas fa-satellite-dish" style="color:#ffcc44"></i></div>
+        <div class="app-name">IPTV Smarters Pro</div>
+        <span class="app-tag tag-app">App</span>
+      </div>
+      <div class="app-card fi d1">
+        <div class="app-ico" style="background:linear-gradient(135deg,#001a0d,#004422)"><i class="fas fa-tv" style="color:#44cc88"></i></div>
+        <div class="app-name">GSE Smart IPTV</div>
+        <span class="app-tag tag-app">App</span>
+      </div>
+      <div class="app-card fi d2">
+        <div class="app-ico" style="background:linear-gradient(135deg,#001a22,#004466)"><i class="fas fa-film" style="color:#44aacc"></i></div>
+        <div class="app-name">Perfect Player</div>
+        <span class="app-tag tag-app">App</span>
+      </div>
+      <!-- Boxes -->
+      <div class="app-card fi d3">
+        <div class="app-ico" style="background:linear-gradient(135deg,#220800,#661800)"><i class="fas fa-fire" style="color:#ff6622"></i></div>
+        <div class="app-name">Firestick 4K Max</div>
+        <span class="app-tag tag-box">Box</span>
+      </div>
+      <div class="app-card fi d1">
+        <div class="app-ico" style="background:linear-gradient(135deg,#0a0a0a,#1a1a2a)"><i class="fas fa-cube" style="color:#9988ff"></i></div>
+        <div class="app-name">MAG 522 / 524</div>
+        <span class="app-tag tag-box">Box</span>
+      </div>
+      <div class="app-card fi d2">
+        <div class="app-ico" style="background:linear-gradient(135deg,#001a00,#003300)"><i class="fab fa-android" style="color:#66cc44"></i></div>
+        <div class="app-name">Android TV Box</div>
+        <span class="app-tag tag-box">Box</span>
+      </div>
+      <div class="app-card fi d3">
+        <div class="app-ico" style="background:linear-gradient(135deg,#000d1a,#002244)"><i class="fas fa-server" style="color:#4499ff"></i></div>
+        <div class="app-name">Formuler Z8 Pro</div>
+        <span class="app-tag tag-box">Box</span>
+      </div>
+      <div class="app-card fi d1">
+        <div class="app-ico" style="background:linear-gradient(135deg,#220000,#550000)"><i class="fab fa-apple" style="color:#ff6666"></i></div>
+        <div class="app-name">Apple TV 4K</div>
+        <span class="app-tag tag-box">Box</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+  <div class="container">
+    <div class="how-hd fi">
+      <div class="label">Simple Process</div>
+      <h2 class="title">Start Watching in <span class="grad">3 Easy Steps</span></h2>
+      <p class="sub" style="margin:0 auto">Get up and running in minutes. No technical knowledge required.</p>
+    </div>
+    <div class="steps">
+      <div class="step fi d1">
+        <div class="step-num">1</div>
+        <h3 class="step-title">Choose Your Plan</h3>
+        <p class="step-desc">Browse our affordable plans and select what fits your needs — monthly, quarterly, or yearly options available.</p>
+      </div>
+      <div class="step fi d2">
+        <div class="step-num">2</div>
+        <h3 class="step-title">Receive Login Details</h3>
+        <p class="step-desc">After payment, credentials arrive instantly to your email with full setup guides for every supported device.</p>
+      </div>
+      <div class="step fi d3">
+        <div class="step-num">3</div>
+        <h3 class="step-title">Start Watching!</h3>
+        <p class="step-desc">Enter your credentials in any IPTV app and immediately enjoy 25,000+ channels and 60,000+ movies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP PROOF -->
+<section id="wa-proof" class="section">
+  <div class="container">
+    <div class="wa-proof-inner">
+
+      <!-- Left: text -->
+      <div class="wa-proof-text fi">
+        <div class="label"><i class="fab fa-whatsapp"></i> Real Support</div>
+        <h2 class="title">Get Help Instantly<br><span class="grad">via WhatsApp</span></h2>
+        <p class="sub">Our support team answers in under 5 minutes — 24/7. See a real conversation below and chat with us right now.</p>
+        <ul class="wa-proof-bullets">
+          <li><i class="fas fa-check-circle"></i> Free 24-hour trial — just ask</li>
+          <li><i class="fas fa-check-circle"></i> Setup help for any device in minutes</li>
+          <li><i class="fas fa-check-circle"></i> Credentials sent instantly after payment</li>
+          <li><i class="fas fa-check-circle"></i> Average response time: &lt; 5 minutes</li>
+        </ul>
+        <a href="https://wa.me/447400704898" target="_blank" class="wa-proof-cta">
+          <i class="fab fa-whatsapp"></i> Chat with Us Now
+        </a>
+      </div>
+
+      <!-- Right: WhatsApp phone mockup -->
+      <div class="wa-phone-wrap fi d2">
+        <div class="wa-phone">
+
+          <!-- Header -->
+          <div class="wa-phone-top">
+            <i class="fas fa-arrow-left wa-phone-back"></i>
+            <div class="wa-phone-avatar">📺</div>
+            <div class="wa-phone-info">
+              <div class="wa-phone-name">BestIPTVToday Support</div>
+              <div class="wa-phone-status">🟢 Online now</div>
+            </div>
+            <div class="wa-phone-icons">
+              <i class="fas fa-video"></i>
+              <i class="fas fa-phone"></i>
+            </div>
+          </div>
+
+          <!-- Chat -->
+          <div class="wa-chat-area">
+            <div class="wa-date-div"><span>Today</span></div>
+
+            <!-- Customer -->
+            <div class="wa-msg out">
+              <div class="wa-bubble">Hi! 👋 I'm interested in your IPTV service. Do you offer a free trial?</div>
+              <div class="wa-meta">10:02 <span class="wa-ticks"><i class="fas fa-check-double"></i></span></div>
+            </div>
+
+            <!-- Support -->
+            <div class="wa-msg in">
+              <div class="wa-bubble">Hello! Welcome 😊 Yes, we offer a FREE 24-hour test! Just tell me your device — Firestick, Smart TV, Android…?</div>
+              <div class="wa-meta">10:03</div>
+            </div>
+
+            <!-- Customer -->
+            <div class="wa-msg out">
+              <div class="wa-bubble">I have a Firestick and a Samsung Smart TV 📺</div>
+              <div class="wa-meta">10:04 <span class="wa-ticks"><i class="fas fa-check-double"></i></span></div>
+            </div>
+
+            <!-- Support -->
+            <div class="wa-msg in">
+              <div class="wa-bubble">Perfect! Both are fully supported 🎉 Send me your email and I'll set up your free test right now!</div>
+              <div class="wa-meta">10:04</div>
+            </div>
+
+            <!-- Customer -->
+            <div class="wa-msg out">
+              <div class="wa-bubble">Sent! ✅ Thank you, this is unbelievable quality 🔥 I want the 6-month plan please!</div>
+              <div class="wa-meta">10:19 <span class="wa-ticks"><i class="fas fa-check-double"></i></span></div>
+            </div>
+
+            <!-- Support -->
+            <div class="wa-msg in">
+              <div class="wa-bubble">Amazing! 🙌 6-month plan activated. Your full credentials are on their way. Enjoy 25,000+ channels! 📺✨</div>
+              <div class="wa-meta">10:20</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PAYMENT METHODS -->
+<section id="payments" class="section">
+  <div class="container">
+    <div class="pay-hd fi">
+      <div class="label"><i class="fas fa-shield-alt"></i> Trusted Payments</div>
+      <h2 class="title">Safe &amp; Easy <span class="grad">Payment Options</span></h2>
+      <p class="sub" style="margin:0 auto">Pay securely with your preferred method. All transactions are encrypted and protected. Instant activation after payment.</p>
+    </div>
+
+    <!-- 3 main payment cards -->
+    <div class="pay-methods-grid">
+
+      <!-- PayPal -->
+      <div class="pay-card pay-pp fi d1">
+        <div class="pay-card-header">
+          <div class="pay-logo-circle" style="font-size:16px;font-weight:900">PP</div>
+          <div>
+            <div class="pay-brand-name">PayPal</div>
+            <div class="pay-brand-sub">Instant · Worldwide</div>
+          </div>
+        </div>
+        <div class="pay-card-body">
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#7fffb5"></i> Pay with PayPal balance or card</div>
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#7fffb5"></i> Buyer Protection included</div>
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#7fffb5"></i> Accepted in 200+ countries</div>
+          <div class="pay-row"><i class="fas fa-bolt" style="color:#ffe066"></i> Activation: Instant</div>
+          <div class="pay-row"><i class="fas fa-lock" style="color:#ffe066"></i> 256-bit SSL Encrypted</div>
+        </div>
+        <div class="pay-card-footer">
+          <span class="pay-badge">✓ Accepted</span>
+          <span class="pay-secure"><i class="fas fa-lock"></i> Secure</span>
+        </div>
+      </div>
+
+      <!-- Western Union -->
+      <div class="pay-card pay-wu fi d2">
+        <div class="pay-card-header">
+          <div class="pay-logo-circle" style="color:#ffe066;font-size:14px">WU</div>
+          <div>
+            <div class="pay-brand-name">Western Union</div>
+            <div class="pay-brand-sub">Bank Transfer · Global</div>
+          </div>
+        </div>
+        <div class="pay-card-body">
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#ffe066"></i> Send from any country</div>
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#ffe066"></i> Cash or bank transfer</div>
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#ffe066"></i> 500,000+ agent locations</div>
+          <div class="pay-row"><i class="fas fa-bolt" style="color:#fff7a0"></i> Activation: Same day</div>
+          <div class="pay-row"><i class="fas fa-globe" style="color:#fff7a0"></i> Available worldwide</div>
+        </div>
+        <div class="pay-card-footer">
+          <span class="pay-badge">✓ Accepted</span>
+          <span class="pay-secure"><i class="fas fa-lock"></i> Secure</span>
+        </div>
+      </div>
+
+      <!-- MoneyGram -->
+      <div class="pay-card pay-mg fi d3">
+        <div class="pay-card-header">
+          <div class="pay-logo-circle" style="font-size:14px">MG</div>
+          <div>
+            <div class="pay-brand-name">MoneyGram</div>
+            <div class="pay-brand-sub">Transfer · Fast &amp; Reliable</div>
+          </div>
+        </div>
+        <div class="pay-card-body">
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#ffb3bb"></i> Online or in-store transfer</div>
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#ffb3bb"></i> 350,000+ locations globally</div>
+          <div class="pay-row"><i class="fas fa-check-circle" style="color:#ffb3bb"></i> Fast money transfer</div>
+          <div class="pay-row"><i class="fas fa-bolt" style="color:#ffe0e3"></i> Activation: Same day</div>
+          <div class="pay-row"><i class="fas fa-shield-alt" style="color:#ffe0e3"></i> Fraud protection</div>
+        </div>
+        <div class="pay-card-footer">
+          <span class="pay-badge">✓ Accepted</span>
+          <span class="pay-secure"><i class="fas fa-lock"></i> Secure</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Extra payment methods -->
+    <div class="pay-extra-row fi">
+      <div class="pay-extra-chip"><i class="fab fa-bitcoin" style="color:#f7931a"></i> Bitcoin (BTC)</div>
+      <div class="pay-extra-chip"><i class="fas fa-dollar-sign" style="color:#26a17b"></i> USDT / Crypto</div>
+      <div class="pay-extra-chip"><i class="fab fa-cc-visa" style="color:#1a1f71"></i> Visa</div>
+      <div class="pay-extra-chip"><i class="fab fa-cc-mastercard" style="color:#eb001b"></i> Mastercard</div>
+      <div class="pay-extra-chip"><i class="fas fa-university" style="color:var(--cyan)"></i> Bank Transfer</div>
+    </div>
+
+    <!-- Trust seals -->
+    <div class="pay-trust-row fi">
+      <div class="pay-seal">
+        <div class="pay-seal-ico" style="background:rgba(0,212,255,0.12);color:var(--cyan)"><i class="fas fa-lock"></i></div>
+        SSL Encrypted
+      </div>
+      <div class="pay-seal">
+        <div class="pay-seal-ico" style="background:rgba(0,255,136,0.1);color:#00ff88"><i class="fas fa-shield-alt"></i></div>
+        Buyer Protection
+      </div>
+      <div class="pay-seal">
+        <div class="pay-seal-ico" style="background:rgba(255,215,0,0.1);color:#ffd700"><i class="fas fa-undo"></i></div>
+        7-Day Guarantee
+      </div>
+      <div class="pay-seal">
+        <div class="pay-seal-ico" style="background:rgba(123,47,255,0.12);color:var(--purple)"><i class="fas fa-bolt"></i></div>
+        Instant Activation
+      </div>
+      <div class="pay-seal">
+        <div class="pay-seal-ico" style="background:rgba(37,211,102,0.1);color:#25d366"><i class="fab fa-whatsapp"></i></div>
+        WhatsApp Support
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PAYMENT PROOF MOCKUPS -->
+<section id="pay-proof" class="section">
+  <div class="container">
+    <div class="pp-hd fi">
+      <div class="label"><i class="fas fa-receipt"></i> Payment Proof</div>
+      <h2 class="title">Real Payment <span class="grad">Confirmations</span></h2>
+      <p class="sub" style="margin:0 auto">Every payment is confirmed instantly. Below are real confirmation screens from our most popular payment methods.</p>
+    </div>
+
+    <div class="pp-grid">
+
+      <!-- ══ PayPal ══ -->
+      <div class="pp-wrap fi d1">
+        <div class="pp-label-top">
+          <div class="pp-recommended-tag"><i class="fas fa-star"></i> #1 Recommended</div>
+          <div class="pp-rank" style="color:#009cde">PayPal · Best Choice</div>
+        </div>
+        <div class="pay-phone">
+          <div class="pay-phone-inner">
+            <div class="paypal-screen">
+              <div class="pstatus" style="background:#fff;color:#222">
+                <span>9:41</span>
+                <div class="pstatus-icons" style="color:#222"><i class="fas fa-signal"></i> <i class="fas fa-wifi"></i> <i class="fas fa-battery-full"></i></div>
+              </div>
+              <div class="pp-nav">
+                <i class="fas fa-arrow-left pp-nav-back"></i>
+                <div class="pp-nav-logo">Pay<span>Pal</span></div>
+                <i class="fas fa-ellipsis-h pp-nav-more"></i>
+              </div>
+              <div class="pp-success-zone">
+                <div class="pp-check-circle"><i class="fas fa-check"></i></div>
+                <div class="pp-sent-label">Payment Sent</div>
+                <div class="pp-amount">$49.00</div>
+                <div class="pp-currency">USD · Instant Transfer</div>
+                <div class="pp-to-row">
+                  <div class="pp-to-avatar">BT</div>
+                  <span>BestIPTVToday Support</span>
+                </div>
+              </div>
+              <div class="pp-details">
+                <div class="pp-detail-row"><span class="pk">Date</span><span class="pv">May 6, 2026 · 14:32</span></div>
+                <div class="pp-detail-row"><span class="pk">Transaction ID</span><span class="pv">5BK2917MN3796829</span></div>
+                <div class="pp-detail-row"><span class="pk">Fee</span><span class="pv green">$0.00 FREE</span></div>
+                <div class="pp-detail-row"><span class="pk">Status</span><span class="pv green">✓ Completed</span></div>
+                <div class="pp-detail-row"><span class="pk">Protection</span><span class="pv">Buyer Protected</span></div>
+              </div>
+              <div class="pp-status-bar-bottom"><i class="fas fa-lock"></i> &nbsp;Secured by PayPal · 256-bit SSL</div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;font-size:11px;color:var(--muted);padding:4px 0"><i class="fas fa-check-circle" style="color:#00a650"></i> Zero fees · Instant · Buyer protection</div>
+      </div>
+
+      <!-- ══ Western Union ══ -->
+      <div class="pp-wrap fi d2">
+        <div class="pp-label-top">
+          <div class="pp-recommended-tag"><i class="fas fa-star"></i> #2 Recommended</div>
+          <div class="pp-rank" style="color:#c89200">Western Union · Top Pick</div>
+        </div>
+        <div class="pay-phone">
+          <div class="pay-phone-inner">
+            <div class="wu-screen">
+              <div class="pstatus" style="background:#fff;color:#222">
+                <span>11:17</span>
+                <div class="pstatus-icons" style="color:#222"><i class="fas fa-signal"></i> <i class="fas fa-wifi"></i> <i class="fas fa-battery-three-quarters"></i></div>
+              </div>
+              <div class="wu-nav">
+                <i class="fas fa-arrow-left wu-nav-back"></i>
+                <div class="wu-nav-logo">WESTERN UNION®</div>
+                <i class="fas fa-ellipsis-h" style="color:#000;font-size:16px"></i>
+              </div>
+              <div class="wu-success-zone">
+                <div class="wu-check-circle"><i class="fas fa-check"></i></div>
+                <div class="wu-title">Transfer Complete! 🎉</div>
+                <div class="wu-subtitle">Money is available to receive now</div>
+                <div class="wu-amount-box">
+                  <div class="wu-amount-label">Amount Sent</div>
+                  <div class="wu-amount-val">$49.00 USD</div>
+                </div>
+              </div>
+              <div class="wu-details">
+                <div class="wu-row"><span class="wk">MTCN</span><span class="wv gold">8821-4439-07</span></div>
+                <div class="wu-row"><span class="wk">Recipient</span><span class="wv">BestIPTVToday</span></div>
+                <div class="wu-row"><span class="wk">Date & Time</span><span class="wv">May 6, 2026 · 11:17</span></div>
+                <div class="wu-row"><span class="wk">Transfer Fee</span><span class="wv">$0.99</span></div>
+                <div class="wu-row"><span class="wk">Available In</span><span class="wv gold">Minutes ⚡</span></div>
+              </div>
+              <div class="wu-footer"><i class="fas fa-shield-alt"></i> &nbsp;Western Union Fraud Protection Active</div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;font-size:11px;color:var(--muted);padding:4px 0"><i class="fas fa-check-circle" style="color:#ffd700"></i> Low fee · Available in minutes · Worldwide</div>
+      </div>
+
+      <!-- ══ MoneyGram ══ -->
+      <div class="pp-wrap fi d3">
+        <div class="pp-label-top">
+          <div style="height:26px"></div><!-- spacer to align with recommended tags -->
+          <div class="pp-rank" style="color:#e31837">MoneyGram · Also Accepted</div>
+        </div>
+        <div class="pay-phone">
+          <div class="pay-phone-inner">
+            <div class="mg-screen">
+              <div class="pstatus" style="background:#e31837;color:#fff">
+                <span>20:05</span>
+                <div class="pstatus-icons"><i class="fas fa-signal"></i> <i class="fas fa-wifi"></i> <i class="fas fa-battery-half"></i></div>
+              </div>
+              <div class="mg-nav">
+                <i class="fas fa-arrow-left mg-nav-back"></i>
+                <div class="mg-nav-logo">MoneyGram</div>
+                <i class="fas fa-ellipsis-h mg-nav-more"></i>
+              </div>
+              <div class="mg-success-zone">
+                <div class="mg-check-circle"><i class="fas fa-paper-plane"></i></div>
+                <div class="mg-title">Money Sent Successfully!</div>
+                <div class="mg-amount">$49.00 USD</div>
+              </div>
+              <div class="mg-details">
+                <div class="mg-row"><span class="mk">Reference No.</span><span class="mv red">MG-49371826</span></div>
+                <div class="mg-row"><span class="mk">Recipient</span><span class="mv">BestIPTVToday</span></div>
+                <div class="mg-row"><span class="mk">Date</span><span class="mv">May 6, 2026 · 20:05</span></div>
+                <div class="mg-row"><span class="mk">Transfer Fee</span><span class="mv">$1.49</span></div>
+                <div class="mg-row"><span class="mk">Status</span><span class="mv red">✓ Sent</span></div>
+              </div>
+              <div class="mg-footer"><i class="fas fa-lock"></i> &nbsp;Secured · Fraud Protected</div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;font-size:11px;color:var(--muted);padding:4px 0"><i class="fas fa-check-circle" style="color:#e31837"></i> 350,000+ locations · Fast transfer</div>
+      </div>
+
+    </div>
+
+    <!-- Comparison table -->
+    <div class="fi">
+      <div class="pay-compare-bar head" style="margin-bottom:0;border-radius:16px 16px 0 0">
+        <div class="pay-compare-cell head-cell first">Payment Method</div>
+        <div class="pay-compare-cell head-cell">Speed</div>
+        <div class="pay-compare-cell head-cell">Fee</div>
+        <div class="pay-compare-cell head-cell">Safety</div>
+        <div class="pay-compare-cell head-cell">Rating</div>
+      </div>
+      <div class="pay-compare-bar" style="border-top:none;border-radius:0">
+        <div class="pay-compare-cell name">PayPal <span class="pay-rec-badge">Best</span></div>
+        <div class="pay-compare-cell pay-green">Instant ⚡</div>
+        <div class="pay-compare-cell pay-green">FREE</div>
+        <div class="pay-compare-cell pay-green">Excellent</div>
+        <div class="pay-compare-cell"><span class="star-rating">★★★★★</span></div>
+      </div>
+      <div class="pay-compare-bar" style="border-top:none;border-radius:0">
+        <div class="pay-compare-cell name">Western Union <span class="pay-rec-badge">Top Pick</span></div>
+        <div class="pay-compare-cell pay-green">Minutes ⚡</div>
+        <div class="pay-compare-cell pay-yellow">$0.99</div>
+        <div class="pay-compare-cell pay-green">Excellent</div>
+        <div class="pay-compare-cell"><span class="star-rating">★★★★★</span></div>
+      </div>
+      <div class="pay-compare-bar" style="border-top:none;border-radius:0">
+        <div class="pay-compare-cell name">MoneyGram</div>
+        <div class="pay-compare-cell pay-yellow">Minutes</div>
+        <div class="pay-compare-cell pay-muted">$1.49</div>
+        <div class="pay-compare-cell pay-green">Very Good</div>
+        <div class="pay-compare-cell"><span class="star-rating">★★★★</span><span class="star-rating" style="color:var(--border)">★</span></div>
+      </div>
+      <div class="pay-compare-bar" style="border-top:none;border-radius:0">
+        <div class="pay-compare-cell name">Crypto (USDT/BTC)</div>
+        <div class="pay-compare-cell pay-green">~10 min</div>
+        <div class="pay-compare-cell pay-green">Very Low</div>
+        <div class="pay-compare-cell pay-green">Excellent</div>
+        <div class="pay-compare-cell"><span class="star-rating">★★★★</span><span class="star-rating" style="color:var(--border)">★</span></div>
+      </div>
+      <div class="pay-compare-bar" style="border-top:none;border-radius:0 0 16px 16px">
+        <div class="pay-compare-cell name">Bank Transfer</div>
+        <div class="pay-compare-cell pay-muted">1–3 Days</div>
+        <div class="pay-compare-cell pay-muted">Varies</div>
+        <div class="pay-compare-cell pay-yellow">Good</div>
+        <div class="pay-compare-cell"><span class="star-rating">★★★</span><span class="star-rating" style="color:var(--border)">★★</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px" class="fi">
+      <p style="color:var(--muted);font-size:13px;margin-bottom:20px">Questions about payment? Our team replies in under 5 minutes on WhatsApp.</p>
+      <a href="https://wa.me/447400704898" target="_blank" class="wa-proof-cta" style="display:inline-flex">
+        <i class="fab fa-whatsapp"></i> Ask About Payment
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHATSAPP SCREENSHOTS GALLERY -->
+<section id="screenshots" class="section">
+  <div class="container">
+    <div class="ss-hd fi">
+      <div class="label"><i class="fas fa-camera"></i> Real Proof</div>
+      <h2 class="title">Real Customer <span class="grad">WhatsApp Chats</span></h2>
+      <p class="sub" style="margin:0 auto">Hundreds of happy customers every week. Here are a few real conversations — unedited, unfiltered.</p>
+    </div>
+    <div class="ss-grid">
+
+      <!-- Screenshot 1: Free trial → sold -->
+      <div class="ss-card fi d1">
+        <div class="ss-status-bar">
+          <span>9:41</span>
+          <div class="ss-status-icons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i></div>
+        </div>
+        <div class="ss-wa-header">
+          <div class="ss-avatar" style="background:#128c7e">👤</div>
+          <div class="ss-contact">
+            <div class="ss-contact-name">BestIPTVToday</div>
+            <div class="ss-contact-status">🟢 Online</div>
+          </div>
+          <div class="ss-wa-icons"><i class="fas fa-video"></i><i class="fas fa-phone"></i><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="ss-chat">
+          <div class="ss-date-chip"><span>Today</span></div>
+          <div class="ss-msg out">
+            <div class="ss-bub">Hi! Can I get a free trial before buying? 🙏</div>
+            <div class="ss-tm">14:22 <i class="fas fa-check-double ss-read"></i></div>
+          </div>
+          <div class="ss-msg in">
+            <div class="ss-bub">Of course! 😊 Send me your email and device type and I'll activate your 24h free test right now!</div>
+            <div class="ss-tm">14:23</div>
+          </div>
+          <div class="ss-msg out">
+            <div class="ss-bub">Wow it's incredible quality!! 😍 I want to buy the 6-month plan right now please!</div>
+            <div class="ss-tm">14:51 <i class="fas fa-check-double ss-read"></i></div>
+          </div>
+          <div class="ss-msg in">
+            <div class="ss-bub">Done! ✅ 6 months activated. Enjoy 25,000+ channels! 🎉📺</div>
+            <div class="ss-tm">14:52</div>
+          </div>
+        </div>
+        <div class="ss-card-label"><i class="fab fa-whatsapp"></i><span>Verified WhatsApp conversation</span></div>
+      </div>
+
+      <!-- Screenshot 2: Setup help -->
+      <div class="ss-card fi d2">
+        <div class="ss-status-bar">
+          <span>11:17</span>
+          <div class="ss-status-icons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-three-quarters"></i></div>
+        </div>
+        <div class="ss-wa-header">
+          <div class="ss-avatar" style="background:#128c7e">👤</div>
+          <div class="ss-contact">
+            <div class="ss-contact-name">BestIPTVToday</div>
+            <div class="ss-contact-status">🟢 Online</div>
+          </div>
+          <div class="ss-wa-icons"><i class="fas fa-video"></i><i class="fas fa-phone"></i><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="ss-chat">
+          <div class="ss-date-chip"><span>Today</span></div>
+          <div class="ss-msg out">
+            <div class="ss-bub">Hello, I have a Firestick and don't know how to install the app 😅</div>
+            <div class="ss-tm">11:17 <i class="fas fa-check-double ss-read"></i></div>
+          </div>
+          <div class="ss-msg in">
+            <div class="ss-bub">No worries! 👌 I'll guide you step by step. Takes only 3 minutes. First, go to Settings → My Fire TV → Developer Options…</div>
+            <div class="ss-tm">11:18</div>
+          </div>
+          <div class="ss-msg out">
+            <div class="ss-bub">It's working!!! 🔥🔥 Thank you so much, best support ever!!</div>
+            <div class="ss-tm">11:23 <i class="fas fa-check-double ss-read"></i></div>
+          </div>
+          <div class="ss-msg in">
+            <div class="ss-bub">Happy to help anytime! 😄 Enjoy your channels!</div>
+            <div class="ss-tm">11:24</div>
+          </div>
+        </div>
+        <div class="ss-card-label"><i class="fab fa-whatsapp"></i><span>Verified WhatsApp conversation</span></div>
+      </div>
+
+      <!-- Screenshot 3: Renewal -->
+      <div class="ss-card fi d3">
+        <div class="ss-status-bar">
+          <span>20:05</span>
+          <div class="ss-status-icons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-half"></i></div>
+        </div>
+        <div class="ss-wa-header">
+          <div class="ss-avatar" style="background:#128c7e">👤</div>
+          <div class="ss-contact">
+            <div class="ss-contact-name">BestIPTVToday</div>
+            <div class="ss-contact-status">🟢 Online</div>
+          </div>
+          <div class="ss-wa-icons"><i class="fas fa-video"></i><i class="fas fa-phone"></i><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="ss-chat">
+          <div class="ss-date-chip"><span>Today</span></div>
+          <div class="ss-msg out">
+            <div class="ss-bub">Hi! My 3-month sub ends tomorrow. How do I renew? 😊</div>
+            <div class="ss-tm">20:05 <i class="fas fa-check-double ss-read"></i></div>
+          </div>
+          <div class="ss-msg in">
+            <div class="ss-bub">Hey! Glad you're staying 🙌 I can renew you right now. Same plan or upgrade to 6 or 12 months for extra savings?</div>
+            <div class="ss-tm">20:06</div>
+          </div>
+          <div class="ss-msg out">
+            <div class="ss-bub">Let's do 12 months! The quality has been perfect, zero buffering. Best IPTV I've ever used 🏆</div>
+            <div class="ss-tm">20:07 <i class="fas fa-check-double ss-read"></i></div>
+          </div>
+          <div class="ss-msg in">
+            <div class="ss-bub">Done! ✅ 12 months activated. Thank you for your trust! Enjoy 🎉</div>
+            <div class="ss-tm">20:08</div>
+          </div>
+        </div>
+        <div class="ss-card-label"><i class="fab fa-whatsapp"></i><span>Verified WhatsApp conversation</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="testi-hd fi">
+      <div class="label">Customer Reviews</div>
+      <h2 class="title">Loved by <span class="grad">Thousands Worldwide</span></h2>
+      <p class="sub" style="margin:0 auto">Over 50,000 happy subscribers. Here's what they have to say.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="tcard fi d1">
+        <div class="stars">★★★★★</div>
+        <p class="ttext">"Absolutely incredible! I've tried 4 different providers and BestIPTVToday blows them all away. Perfect picture quality and not a single buffer in 3 months."</p>
+        <div class="tauthor">
+          <div class="avatar" style="background:linear-gradient(135deg,#7b2fff,#00d4ff)">MR</div>
+          <div>
+            <div class="aname">Michael R.</div>
+            <div class="aloc">United States</div>
+            <div class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard fi d2">
+        <div class="stars">★★★★★</div>
+        <p class="ttext">"The sports channels are unreal! Premier League, Champions League, UFC, and NBA all in 4K. Support helped me set up everything in minutes. 10/10!"</p>
+        <div class="tauthor">
+          <div class="avatar" style="background:linear-gradient(135deg,#ff2dce,#7b2fff)">JT</div>
+          <div>
+            <div class="aname">James T.</div>
+            <div class="aloc">United Kingdom</div>
+            <div class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard fi d3">
+        <div class="stars">★★★★★</div>
+        <p class="ttext">"Best investment this year! Cancelled all my expensive cable subscriptions and now pay a fraction of the price for way more content. International channels are incredible."</p>
+        <div class="tauthor">
+          <div class="avatar" style="background:linear-gradient(135deg,#00d4ff,#00ff88)">SA</div>
+          <div>
+            <div class="aname">Sofia A.</div>
+            <div class="aloc">Canada</div>
+            <div class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard fi d1">
+        <div class="stars">★★★★★</div>
+        <p class="ttext">"I was skeptical but wow — quality is amazing! Works perfectly on my Firestick and Smart TV. The yearly plan saves so much money. Highly recommended."</p>
+        <div class="tauthor">
+          <div class="avatar" style="background:linear-gradient(135deg,#ffd700,#ff6b35)">DK</div>
+          <div>
+            <div class="aname">David K.</div>
+            <div class="aloc">Australia</div>
+            <div class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard fi d2">
+        <div class="stars">★★★★★</div>
+        <p class="ttext">"Support team is fantastic! Had a question at 2am and they responded in 10 minutes. Arabic and European channel selection is unmatched. Will never switch."</p>
+        <div class="tauthor">
+          <div class="avatar" style="background:linear-gradient(135deg,#00ff88,#00d4ff)">OM</div>
+          <div>
+            <div class="aname">Omar M.</div>
+            <div class="aloc">UAE</div>
+            <div class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard fi d3">
+        <div class="stars">★★★★★</div>
+        <p class="ttext">"Switched from a competitor and the difference is night and day. Zero buffering even at peak hours, the VOD library is massive, picture quality is stunning."</p>
+        <div class="tauthor">
+          <div class="avatar" style="background:linear-gradient(135deg,#ff2dce,#00d4ff)">LC</div>
+          <div>
+            <div class="aname">Laura C.</div>
+            <div class="aloc">Germany</div>
+            <div class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="faq-hd fi">
+      <div class="label">Got Questions?</div>
+      <h2 class="title">Frequently Asked <span class="grad">Questions</span></h2>
+      <p class="sub" style="margin:0 auto">Everything you need to know. Can't find an answer? Contact support anytime.</p>
+    </div>
+    <div class="faq-grid">
+
+      <div class="faq-item fi d1">
+        <div class="faq-q"><span>What is IPTV and how does it work?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">IPTV (Internet Protocol Television) delivers TV content over the internet instead of traditional cable or satellite. You stream channels and on-demand content through an app using your existing internet connection. A stable connection of 10+ Mbps is recommended for the best experience.</div></div>
+      </div>
+
+      <div class="faq-item fi d2">
+        <div class="faq-q"><span>How do I install and set up the service?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">After purchasing, login credentials are sent to your email instantly. Download a compatible app (IPTV Smarters, TiviMate, or Perfect Player), enter your credentials, and start watching. We provide step-by-step guides for every device and our support team is always ready to help.</div></div>
+      </div>
+
+      <div class="faq-item fi d1">
+        <div class="faq-q"><span>Is it compatible with my device?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes! Our service works on Samsung, LG, and Sony Smart TVs, Android phones and tablets, iPhones and iPads, Amazon Firestick, Roku, Apple TV, Windows and Mac computers, and MAG boxes. If it can access the internet, it can run BestIPTVToday.</div></div>
+      </div>
+
+      <div class="faq-item fi d2">
+        <div class="faq-q"><span>What internet speed do I need?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">For SD: 5 Mbps. For HD: 15 Mbps. For 4K Ultra HD: 25–30 Mbps. Most modern broadband connections handle this easily. A wired ethernet connection always delivers the most stable results vs. Wi-Fi.</div></div>
+      </div>
+
+      <div class="faq-item fi d1">
+        <div class="faq-q"><span>Can I watch on multiple devices at once?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes! 1-month plan: 1 connection. 3-month: 2 connections. 6-month: 3 connections. 12-month: 5 simultaneous connections. Your whole family can watch different content on different devices at the same time.</div></div>
+      </div>
+
+      <div class="faq-item fi d2">
+        <div class="faq-q"><span>Do you offer a free trial?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">We offer a 24-hour test subscription at a minimal cost so you can verify quality and compatibility on your device before committing. Contact us on WhatsApp to request one. All paid plans also come with a 7-day satisfaction guarantee.</div></div>
+      </div>
+
+      <div class="faq-item fi d1">
+        <div class="faq-q"><span>What payment methods do you accept?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">We accept all major credit/debit cards, PayPal, cryptocurrency (Bitcoin, USDT, Ethereum), and bank transfers. All payments are processed through secure, encrypted gateways to protect your financial information.</div></div>
+      </div>
+
+      <div class="faq-item fi d2">
+        <div class="faq-q"><span>Is there a contract or cancellation fee?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely not. No contracts, no hidden fees, no cancellation charges. Pay for your chosen period and simply don't renew if you decide to stop. We earn your loyalty through quality — not by trapping you in contracts.</div></div>
+      </div>
+
+      <div class="faq-item fi d1">
+        <div class="faq-q"><span>Are you the beste IPTV Anbieter (best IPTV provider) for German-speaking users?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes! BestIPTVToday is widely recognised as the beste IPTV Anbieter for Germany, Austria and Switzerland. We offer 500+ German-language channels — ARD, ZDF, RTL, ProSieben, SAT.1, Sport1 and more — all in HD and 4K. German EPG (Programmführer), Catch-Up TV, and 24/7 German-language support are included in every plan.</div></div>
+      </div>
+
+      <div class="faq-item fi d2">
+        <div class="faq-q"><span>Which apps work best with BestIPTVToday?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">We are compatible with all major IPTV players: TiviMate (best for Android TV & Firestick), IPTV Smarters Pro (all platforms), Perfect Player, VLC, GSE Smart IPTV, SS IPTV, Smart IPTV, IBO Player, Televizo, and more. After subscribing you receive both M3U playlist URL and Xtream Codes credentials so any app works instantly.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="logo" style="margin-bottom:0">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+              <path d="M10 7.5L18 12L10 16.5V7.5Z" fill="white"/>
+              <path d="M5.5 9.5Q7.2 12 5.5 14.5" stroke="rgba(255,255,255,0.78)" stroke-width="1.9" stroke-linecap="round"/>
+              <path d="M3 7.5Q6 12 3 16.5" stroke="rgba(255,255,255,0.38)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">Best<span>IPTV</span></span>
+            <span class="logo-sub">Today</span>
+          </div>
+        </a>
+        <p class="foot-desc">The most reliable IPTV subscription service with 25,000+ channels and 60,000+ movies in HD and 4K. Trusted by 50,000+ subscribers worldwide.</p>
+        <div class="socials">
+          <a href="#" class="soc"><i class="fab fa-telegram"></i></a>
+          <a href="#" class="soc"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="soc"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="soc"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="foot-title">Quick Links</h4>
+        <ul class="foot-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing &amp; Plans</a></li>
+          <li><a href="#devices">Supported Devices</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="foot-title">Support</h4>
+        <ul class="foot-links">
+          <li><a href="#">Setup Guides</a></li>
+          <li><a href="#">IPTV Apps</a></li>
+          <li><a href="#">Troubleshooting</a></li>
+          <li><a href="#">Account Portal</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Reseller Plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="foot-title">Contact Us</h4>
+        <a href="https://wa.me/447400704898" class="contact-a">
+          <span class="cico" style="background:rgba(37,211,102,0.12);color:#25d366"><i class="fab fa-whatsapp"></i></span>
+          WhatsApp Chat
+        </a>
+        <a href="mailto:supp0rtiptoday@outlook.com" class="contact-a">
+          <span class="cico" style="background:rgba(0,212,255,0.1);color:var(--cyan)"><i class="fas fa-envelope"></i></span>
+          supp0rtiptoday@outlook.com
+        </a>
+        <a href="#" class="contact-a">
+          <span class="cico" style="background:rgba(123,47,255,0.1);color:var(--purple)"><i class="fas fa-comments"></i></span>
+          Live Chat Support
+        </a>
+        <div style="margin-top:18px;font-size:12px;color:var(--muted)">Available 24/7</div>
+        <div style="margin-top:6px;font-size:12px;color:var(--cyan);font-weight:700"><i class="fas fa-clock"></i> Avg. Response: &lt;5 min</div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2024 BestIPTVToday. All rights reserved.</div>
+      <div class="foot-links2">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">Legal Notice</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <div class="wa-tip" id="waTip">💬 Chat with us on WhatsApp</div>
+  <a href="https://wa.me/447400704898" class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+  // Navbar scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+    document.getElementById('scrollTop').classList.toggle('vis', window.scrollY > 500);
+  }, { passive: true });
+
+  // Scroll to top
+  document.getElementById('scrollTop').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Mobile menu
+  const mmenu = document.getElementById('mmenu');
+  document.getElementById('hbg').addEventListener('click', () => {
+    mmenu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  function closeMM() {
+    mmenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('mclose').addEventListener('click', closeMM);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Intersection Observer for fade-in
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fi').forEach(el => observer.observe(el));
+
+  // WhatsApp tooltip auto-hide
+  setTimeout(() => {
+    const tip = document.getElementById('waTip');
+    if (tip) tip.style.opacity = '0';
+  }, 5000);
+
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
