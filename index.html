@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fhont-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
       --bg: #05050d;
@@ -84,7 +84,7 @@
     #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}
     .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% -5%,rgba(123,47,255,0.38) 0%,transparent 60%),radial-gradient(ellipse 55% 40% at 85% 55%,rgba(0,212,255,0.18) 0%,transparent 50%),radial-gradient(ellipse 40% 35% at 15% 75%,rgba(255,45,206,0.13) 0%,transparent 50%)}
     .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 0%,transparent 72%)}
-    .hero-content{position:relative;z-index:1;text-align:center;max-width:900px;margin:0 auto}
+    .hero-content{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto}
     .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,0.09);border:1px solid rgba(0,212,255,0.3);border-radius:50px;padding:8px 20px;font-size:12px;font-weight:700;color:var(--cyan);margin-bottom:30px;animation:pulse-b 2.5s infinite}
     @keyframes pulse-b{0%,100%{box-shadow:0 0 0 0 rgba(0,212,255,0.25)}50%{box-shadow:0 0 0 9px rgba(0,212,255,0)}}
     .dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;animation:blink 1.6s infinite}
@@ -97,7 +97,7 @@
     .hstat-n{font-size:30px;font-weight:900;line-height:1;margin-bottom:5px}
     .hstat-l{font-size:12px;color:var(--muted);font-weight:500}
     .hstat-div{width:1px;height:40px;background:var(--border)}
-    .fcard{position:absolute;background:rgba(255,255,255,0.05);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;animation:float 6s ease-in-out infinite}
+    .fcard{position:absolute;background:rgba(255,255,255,0.05);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;animation:float 6s ease-in-out infinite;z-index:0;pointer-events:none}
     .fcard.c1{left:4%;top:26%;animation-delay:0s}
     .fcard.c2{right:4%;top:32%;animation-delay:2s}
     .fcard.c3{left:6%;bottom:18%;animation-delay:4s}
@@ -532,7 +532,7 @@
 <div class="mmenu" id="mmenu">
   <button class="mmenu-close" id="mclose"><i class="fas fa-times"></i></button>
   <ul>
-    <li><a href="#" onclick="closeMM()">Home</a></li>
+    <li><a href="/" onclick="closeMM()">Home</a></li>
     <li><a href="#pricing" onclick="closeMM()">Pricing</a></li>
     <li><a href="#devices" onclick="closeMM()">Devices</a></li>
     <li><a href="#testimonials" onclick="closeMM()">Reviews</a></li>
@@ -558,7 +558,7 @@
       </div>
     </a>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#devices">Devices</a></li>
       <li><a href="#testimonials">Reviews</a></li>
@@ -1737,7 +1737,7 @@
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a href="#" class="logo" style="margin-bottom:0">
+        <a href="/" class="logo" style="margin-bottom:0">
           <div class="logo-icon">
             <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
               <path d="M10 7.5L18 12L10 16.5V7.5Z" fill="white"/>
@@ -1800,7 +1800,7 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <div>© 2024 BestIPTVToday. All rights reserved.</div>
+      <div>© 2026 BestIPTVToday. All rights reserved.</div>
       <div class="foot-links2">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
